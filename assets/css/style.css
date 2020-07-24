@@ -1,0 +1,43 @@
+@font-face {
+font-family: 'Eurostile';
+font-style: normal;
+font-weight: normal;
+src: local('Eurostile'), url('../../eurostile.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'EuroStyle Normal';
+font-style: normal;
+font-weight: normal;
+src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
+}
+
+
+body{
+  font-family:'Eurostile';
+  font-weight:normal;
+}
+
+#backdrop{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.45;
+}
+
+#logo{
+  height: 100%;
+  width: 75px;
+}
+
+#navbarSupportedContent {
+  margin-left:5%;
+}
+
+@media screen and (max-width: 992px){
+  #navbarSupportedContent {
+    margin-left:0;
+  }
+}
