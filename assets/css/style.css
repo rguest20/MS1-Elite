@@ -20,6 +20,9 @@ body{
 }
 
 #backdrop{
+  display: flex;
+  background: url("https://golf-ladder-aqualate.net/assets/shipinflight.png") no-repeat center;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   position: absolute;
