@@ -19,9 +19,26 @@ body{
   font-weight:normal;
 }
 
+.navbar{
+  width: 101vw;
+  position: absolute;
+  background-color: rgba(50, 50, 50, 0.8);
+  max-width: 101vw;
+  color: lightGrey;
+}
+
+.navbar .navbar-nav > li > a {
+  color: lightGrey!important;
+}
+
+.active{
+  font-style: italic;
+}
+
 #backdrop{
   display: flex;
   background: url("https://golf-ladder-aqualate.net/assets/shipinflight.png") no-repeat center;
+  filter:blur(4px);
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -35,8 +52,23 @@ body{
   width: 75px;
 }
 
-#navbarSupportedContent {
-  margin-left:5%;
+
+#spacer{
+  height: 100px;
+}
+#introduction{
+  height:300px;
+}
+
+#introduction-picture{
+  height:300px;
+}
+
+#eliteoriginal{
+  height: 100%;
+  width: 100%;
+  background: url(https://pbs.twimg.com/media/BnHzLeMIcAAcnjn?format=jpg&name=small);
+  background-size: cover;
 }
 
 @media screen and (max-width: 992px){
