@@ -144,6 +144,53 @@ body{
       overflow: auto;
 }
 
+#shipslink{
+  height:150px;
+  width:100%;
+}
+
+#link-1-img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: 50% 80%;
+}
+
+#link-1-img:hover{
+  animation-name: linkHover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#missionlink{
+  height:150px;
+  width:100%;
+}
+
+#link-2-img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: 50% 60%;
+}
+
+#link-2-img:hover{
+  animation-name: linkHover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes linkHover{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 1200px){
   #navbarSupportedContent {
     margin-left:0;
