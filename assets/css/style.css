@@ -24,7 +24,7 @@ body{
   background-color: rgba(50, 50, 50, 0.8);
   max-width: 100vw;
   color: lightGrey;
-  z-index: 1;
+  z-index: 4;
 }
 
 .navbar .navbar-nav > li > a {
@@ -67,12 +67,13 @@ body{
   height: 100px;
 }
 #introduction{
-  height:300px;
-  overflow: auto;
+  min-height:300px;
+  height:auto;
   margin-bottom: 30px;
 }
 
 #introduction-picture{
+  object-position: center;
   height:300px;
 }
 
@@ -82,6 +83,7 @@ body{
 }
 
 #eliteoriginal{
+  object-position: center;
   height: 100%;
   width: 100%;
   background: url(https://pbs.twimg.com/media/BnHzLeMIcAAcnjn?format=jpg&name=small) no-repeat center;
@@ -91,10 +93,7 @@ body{
 #reviewRow{
   margin-bottom: 30px;
   min-height: 300px;
-}
-
-#review{
-  overflow: auto;
+  height: auto;
 }
 
 #elite-dangerous-graphics{
@@ -109,13 +108,14 @@ body{
 #elite-pic{
   height: 100%;
   width: 100%;
-  background: url("https://golf-ladder-aqualate.net/assets/elite-dangerous-today.jpg") no-repeat center;
+  background: url("https://golf-ladder-aqualate.net/assets/elite-dangerous-today.jpg") no-repeat center center;
   background-size: 75% 90%;
 }
 
 #hintsRow{
   margin-bottom: 30px;
-  max-height: 300px;
+  min-height: 300px;
+  height:auto;
 }
 
 #elite-dangerous-graphics2{
@@ -132,11 +132,6 @@ body{
   width: 100%;
   background: url("https://golf-ladder-aqualate.net/assets/eliteinside.jpg") no-repeat center;
   background-size: 75% 90%;
-}
-
-#hints{
-    height: 300px;
-      overflow: auto;
 }
 
 #shipslink{
@@ -204,6 +199,33 @@ body{
   background-color: rgba(200,200,200,0.8);
   color: #000;
 }
+
+#pic1, #pic2, #pic3{
+  height: 300px;
+}
+
+#pic1img, #pic2img, #pic3img {
+  height: 100%;
+  width:100%;
+  object-fit:cover;
+  object-position: 50% 30%;
+}
+
+#pic1:hover, #pic2:hover, #pic3:hover{
+  animation-name: picHover;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#hoveringText2{
+  position:relative;
+  text-align: right;
+  letter-spacing: 1.5px;
+  bottom:299px;
+  z-index: 1;
+  background-color: rgba(200,200,200,0.8);
+  color: #000;
+}
 @keyframes linkHover{
   0%{
     opacity: 1;
@@ -215,9 +237,26 @@ body{
     opacity: 1;
   }
 }
+
+@keyframes picHover {
+ from {
+   transform: scale(1);
+   z-index: 0;
+ }
+ to{
+   transform: scale(1.05);
+   z-index: 2;
+  }
+}
 @media screen and (max-width: 1200px){
   #navbarSupportedContent {
     margin-left:0;
+  }
+  #pic1, #pic2, #pic3{
+    height: 200px;
+  }
+  #hoveringText2{
+    bottom:199px;
   }
 }
 

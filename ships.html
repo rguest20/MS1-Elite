@@ -40,7 +40,33 @@
   </section>
   <section id="spacer">
   </section>
-
+  <section id="ships">
+    <div id="shipPics" class="row">
+      <div id="pic1" class="col-12 col-lg-4"><a href="#sidewinder"><img src="./assets/pics/sidewinder.png" alt="Sidewinder in hangar" id="pic1img" />
+          <div id="hoveringText2">Sidewinder</div>
+        </a></div>
+      <div id="pic2" class="col-12 col-lg-4"><a href="#eagle"><img src="./assets/pics/Eagle.png" alt="Eagle in hangar" id="pic2img" />
+          <div id="hoveringText2">Eagle</div>
+        </a></div>
+      <div id="pic3" class="col-12 col-lg-4"><a href="#hauler"><img src="./assets/pics/hauler.png" alt="Hauler in hangar" id="pic3img" />
+          <div id="hoveringText2">Hauler</div>
+        </a></div>
+    </div>
+  </section>
+  <section id="text">
+    <div id="sidewinder" class="d-none">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="eagle" class="d-none">
+      <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="hauler" class="d-none">
+      <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </section>
   <hr />
   <section id="links" class="row">
     <h3 class="col-12">Links</h3>
@@ -99,6 +125,35 @@
   <script src="jqueryui/external/jquery/jquery.js"></script>
   <script src="jqueryui/jquery-ui.js"></script>
   <script src="script.js"></script>
+  <script>
+    function showInfoSidewinder() {
+      $("#sidewinder").removeClass("d-none");
+      $("#eagle").addClass("d-none");
+      $("#hauler").addClass("d-none");
+    }
+
+    function showInfoEagle() {
+      $("#sidewinder").addClass("d-none");
+      $("#eagle").removeClass("d-none");
+      $("#hauler").addClass("d-none");
+    }
+
+    function showInfoHauler() {
+      $("#sidewinder").addClass("d-none");
+      $("#eagle").addClass("d-none");
+      $("#hauler").removeClass("d-none");
+    }
+
+    $("#pic1").click(function() {
+      showInfoSidewinder();
+    });
+    $("#pic2").click(function() {
+      showInfoEagle();
+    });
+    $("#pic3").click(function() {
+      showInfoHauler();
+    });
+  </script>
 </body>
 
 </html>
