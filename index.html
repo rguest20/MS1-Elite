@@ -104,12 +104,18 @@
   </section>
   <hr />
   <section id="links" class="row">
-    <h3>Links</h3>
-    <div id="shipslink">
-      <a href="ships.html"><img src="./assets/pics/elite-ship-landed.jpg" alt="ship landed on planet" id="link-1-img"></a>
+    <h3 class="col-12">Links</h3>
+    <div id="shipslink" class="col-12 col-xl-6">
+      <a href="ships.html"><img src="./assets/pics/elite-ship-landed.jpg" alt="ship landed on planet" id="link-1-img">
+        <div id="hoveringText">The First Four Ships
+        </div>
+      </a>
     </div>
-    <div id="missionlink">
-      <a href="missions.html"><img src="./assets/pics/elitespacestationint.jpg" alt="inside a space station" id="link-2-img"></a>
+    <div id="missionlink" class="col-12 col-xl-6">
+      <a href="missions.html"><img src="./assets/pics/elitespacestationint.jpg" alt="inside a space station" id="link-2-img">
+        <div id="hoveringText">Good Early Missions
+        </div>
+      </a>
     </div>
   </section>
   <footer class="row justify-content-center">
@@ -156,27 +162,19 @@
   <script>
     $("#tabs").tabs();
 
-    function hidemobile() {
-      if ($(window).width() > 768) {
-        $('#accordionSection').hide();
+    function hidetabs() {
+      if ($('#hintsRow').is(':visible')) {
+        $('#accordionSection').hide()
       } else {
-        $('#accordionSection').show();
+        $('#accordionSection').show()
       }
     }
-
-    $(function() {
-      hidemobile();
-    });
-
-    $(document).ready(function() {
-      $(window).resize(function() {
-        if ($(window).width() < 768) {
-          $('#accordionSection').show();
-        } else {
-          $('#accordionSection').hide();
-        }
-      });
-    });
+    window.onload = function() {
+      hidetabs();
+    };
+    window.onresize = function() {
+      hidetabs();
+    };
   </script>
 </body>
 

@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="jqueryui/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <title>Elite:Dangerous Missions</title>
 </head>
@@ -39,14 +40,38 @@
   </section>
   <section id="spacer">
   </section>
+  <section id="main">
+    <h1>Types of Missions</h1>
+    <p>In this section we will discuss the various types of missions available in Elite:Dangerous and whether you should do them.
+  </section>
+  <section id="missiontypes">
+    <div id="1+2" class="row">
+      <div id="courierinfo" class="col-6">
+        <h3>Courier Missions</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div id="transportinfo" class="col-6">
+        <h3>Cargo Transport</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </section>
   <hr />
   <section id="links" class="row">
-    <h3>Links</h3>
-    <div id="homelink">
-      <a href="index.html"><img src="./assets/pics/outerspace.jpg" alt="space with many stars showing" id="link-home-img"></a>
+    <h3 class="col-12">Links</h3><br>
+    <div id="homelink" class="col-12 col-xl-6">
+      <a href="index.html"><img src="./assets/pics/outerspace.jpg" alt="space with many stars showing" id="link-home-img">
+        <div id="hoveringText">Home and Information
+        </div>
+      </a>
     </div>
-    <div id="shipslink">
-      <a href="ships.html"><img src="./assets/pics/elite-ship-landed.jpg" alt="ship landed on planet" id="link-1-img"></a>
+    <div id="shipslink" class="col-12 col-xl-6">
+      <a href="ships.html"><img src="./assets/pics/elite-ship-landed.jpg" alt="ship landed on planet" id="link-1-img">
+        <div id="hoveringText">The First Four Ships
+        </div>
+      </a>
     </div>
   </section>
   <footer class="row justify-content-center">
@@ -88,6 +113,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/uxl/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="jqueryui/external/jquery/jquery.js"></script>
+  <script src="jqueryui/jquery-ui.js"></script>
   <script src="script.js"></script>
 </body>
 

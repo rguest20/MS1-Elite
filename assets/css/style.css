@@ -13,21 +13,16 @@ font-weight: normal;
 src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
 }
 
-html{
-  max-width: 100vw;
-}
-
 body{
   font-family:'Eurostile';
   font-weight:normal;
-  width: 101vw;
 }
 
 .navbar{
-  width: 101vw;
+  width: 100vw;
   position: absolute;
   background-color: rgba(50, 50, 50, 0.8);
-  max-width: 101vw;
+  max-width: 100vw;
   color: lightGrey;
   z-index: 1;
 }
@@ -56,7 +51,7 @@ body{
   filter:blur(4px);
   background-size: cover;
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
   position: fixed;
   z-index: -1;
   opacity: 0.45;
@@ -197,8 +192,17 @@ body{
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+
 #accordionSection{
   display:block;
+}
+
+#hoveringText{
+  position:relative;
+  bottom:150px;
+  z-index: 1;
+  background-color: rgba(200,200,200,0.8);
+  color: #000;
 }
 @keyframes linkHover{
   0%{
