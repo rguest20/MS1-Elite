@@ -180,6 +180,23 @@ body{
   animation-iteration-count: infinite;
 }
 
+#homelink{
+  height:150px;
+  width:100%;
+}
+
+#link-home-img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: 50% 60%;
+}
+
+#link-home-img:hover{
+  animation-name: linkHover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 #accordionSection{
   display:block;
 }
@@ -198,7 +215,10 @@ body{
   #navbarSupportedContent {
     margin-left:0;
   }
-  #hintsRow, #reviewRow, #introduction {
-    background-color: rgba(200,200,200,0.3)
+}
+
+@media screen and (max-width: 281px){
+  #spacer{
+    height: 150px;
   }
 }

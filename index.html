@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <link href="jquery-ui.css" rel="stylesheet">
+  <link href="jqueryui/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <title>Elite:Dangerous Review and Hints</title>
 </head>
@@ -32,18 +32,7 @@
             <a class="nav-link" href="missions.html">Mission Types</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Initial Ships</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              I'll come up with something amazing here.
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">dd1</a>
-              <a class="dropdown-item" href="#">dd2</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">dd3</a>
-            </div>
+            <a class="nav-link" href="ships.html">Initial Ships</a>
           </li>
         </ul>
       </div>
@@ -88,7 +77,7 @@
         est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="d-none d-md-flex col-12 col-md-6 col-xl-4" id="elite-dangerous-graphics2">
+    <div class="d-none d-md-block col-12 col-md-6 col-xl-4" id="elite-dangerous-graphics2">
       <div id="elite-pic2">
       </div>
       <p><small>One of your MANY menus</small></p>
@@ -117,10 +106,10 @@
   <section id="links" class="row">
     <h3>Links</h3>
     <div id="shipslink">
-      <a href="#introduction"><img src="./assets/pics/elite-ship-landed.jpg" alt="ship landed on planet" id="link-1-img"></a>
+      <a href="ships.html"><img src="./assets/pics/elite-ship-landed.jpg" alt="ship landed on planet" id="link-1-img"></a>
     </div>
     <div id="missionlink">
-      <a href="#introduction"><img src="./assets/pics/elitespacestationint.jpg" alt="inside a space station" id="link-2-img"></a>
+      <a href="missions.html"><img src="./assets/pics/elitespacestationint.jpg" alt="inside a space station" id="link-2-img"></a>
     </div>
   </section>
   <footer class="row justify-content-center">
@@ -162,13 +151,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/uxl/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="external/jquery/jquery.js"></script>
-  <script src="jquery-ui.js"></script>
+  <script src="jqueryui/external/jquery/jquery.js"></script>
+  <script src="jqueryui/jquery-ui.js"></script>
   <script>
     $("#tabs").tabs();
 
     function hidemobile() {
-      if ($(window).width() > 600) {
+      if ($(window).width() > 768) {
         $('#accordionSection').hide();
       } else {
         $('#accordionSection').show();
@@ -181,7 +170,7 @@
 
     $(document).ready(function() {
       $(window).resize(function() {
-        if ($(window).width() < 600) {
+        if ($(window).width() < 768) {
           $('#accordionSection').show();
         } else {
           $('#accordionSection').hide();
