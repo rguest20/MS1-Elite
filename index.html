@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <title>Elite:Dangerous Review and Hints</title>
 </head>
@@ -50,7 +51,7 @@
   </section>
   <section id="spacer">
   </section>
-  <section id="content" class="row">
+  <section id="content" class="row d-none d-md-flex ">
     <div id="introduction" class="col-12 col-md-6 col-xl-8">
       <h1>ELITE:DANGEROUS</h1>
       <h3>History</h3>
@@ -65,8 +66,7 @@
       <p><small>Original wireframe graphics</small></p>
     </div>
   </section>
-  <hr class="d-xl-none">
-  <section id="reviewRow" class="row">
+  <section id="reviewRow" class="row d-none d-md-flex ">
     <div class="d-none d-md-block col-12 col-md-6 col-xl-4" id="elite-dangerous-graphics">
       <div id="elite-pic">
       </div>
@@ -78,9 +78,8 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
-  <hr class="d-block d-xl-none">
-  <section id="hintsRow" class="row">
-    <div class="col-12 col-md-6 col-xl-8" id="hints">
+  <section id="hintsRow" class="row d-none d-md-flex ">
+    <div class="col-md-6 col-xl-8" id="hints">
       <h3>How Do I Get Started?</h3>
       <p>You will start in the universe with only the smallest ship at your fingertips...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -89,10 +88,29 @@
         est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="d-none d-md-block col-12 col-md-6 col-xl-4" id="elite-dangerous-graphics2">
+    <div class="d-none d-md-flex col-12 col-md-6 col-xl-4" id="elite-dangerous-graphics2">
       <div id="elite-pic2">
       </div>
       <p><small>One of your MANY menus</small></p>
+    </div>
+  </section>
+  <section id="accordionSection">
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">History</a></li>
+        <li><a href="#tabs-2">First Five Hours Review</a></li>
+        <li><a href="#tabs-3">How Do I Get Started?</a></li>
+      </ul>
+      <div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</div>
+      <div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+      <div id="tabs-3">You will start in the universe with only the smallest ship at your fingertips...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     </div>
   </section>
   <hr />
@@ -144,7 +162,33 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/uxl/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  <script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+    $("#tabs").tabs();
+
+    function hidemobile() {
+      if ($(window).width() > 600) {
+        $('#accordionSection').hide();
+      } else {
+        $('#accordionSection').show();
+      }
+    }
+
+    $(function() {
+      hidemobile();
+    });
+
+    $(document).ready(function() {
+      $(window).resize(function() {
+        if ($(window).width() < 600) {
+          $('#accordionSection').show();
+        } else {
+          $('#accordionSection').hide();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

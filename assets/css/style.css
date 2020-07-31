@@ -180,6 +180,9 @@ body{
   animation-iteration-count: infinite;
 }
 
+#accordionSection{
+  display:block;
+}
 @keyframes linkHover{
   0%{
     opacity: 1;
