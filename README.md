@@ -1,1 +1,32 @@
-# MS1-Elite
+# Elite:Dangerous HINTWIZ Project
+## Functional specifications
+- Static website produced using HTML
+- Styled using CSS
+- JavaScript not required, but can be implemented
+- No Lorem ipsum text
+
+User stories are an effective tool to identify and describe the functionality needed from the user’s perspective, and can be used as acceptance criteria. Developers can also use the same domain language as in user stories to develop nomenclature in the software, so taking care to name objects clearly and logically helps ensure that the code correlates with the requirements.
+
+Entity relationship diagrams present users and objects (entities), relationships, and attributes in graphical format. They can be particularly useful for complex projects with large development teams, and help ensure that everyone understands the relationships between the different objects before development begins.
+
+While it’s important to document functional requirements at a high level before moving into the development phase, excessive or overly detailed pre-development documentation can potentially restrict the project team’s options for developing appropriate solutions; it may also become obsolete later in the project life cycle as new requirements, problems, and details emerge during the project. Extensive documentation is also time-consuming to maintain, so it’s best to create more detailed documentation later in the project life cycle.
+
+DOCUMENTATION DURING DEVELOPMENT
+It’s important during the development phase to clearly represent the high-level architecture and note any deviations from typical practice as the project progresses. Development documentation at this stage is typically automated through good programming practices rather than manually written into documents. This can be facilitated by the use of frameworks, choice of programming language, and in the messages in your version control/code repositories.
+
+Frameworks are specific software libraries that serve as a filing system in a standard format to store code and procedures. Ruby on Rails was the first framework designed specifically to meet the needs of web application development, and is considered to be the gold standard that other frameworks are modeled upon. Each framework is designed to be used with a particular programming language – e.g., Ruby on Rails with Ruby, Django with Python and Cake with PHP.
+
+Programming languages have various forms of syntax requiring various levels of comments/remarks to be clearly documented and understood. Languages using syntax close to natural English clearly show the intent without the need of excessive documentation or comments. We chose to work in Ruby because it has a very clear syntax and therefore can be described as a self-documenting language (Python is another such language).
+
+Version control/code repositories can also be considered to be part of documentation. To make repositories useful in that way, developers should insert an explanation of what is being “committed” (describing how the updated source code affects the project).
+
+Most of the tools mentioned above support project teams in creating effective documentation easily “as they go,” requiring minimum time and effort, which also means that it is very cost effective for the client.
+
+POST-DEVELOPMENT DOCUMENTATION
+Post-development documentation is typically produced in order to support the team of developers responsible for maintaining the software or to teach end-users how to use the software.
+
+Proficient use of some of the tools discussed previously can eliminate the need to pull divergent results and ideas together at the end of a project with additional documentation. However, at the very minimum it is good software project etiquette to document the procedure describing how to set up and run the application, helping future developers to get up and running quickly.
+
+The need for extensive end-user documentation is largely disappearing as software becomes increasingly intuitive, with particular emphasis on User Experience and User Interface design. Moreover, screencasts are now preferred over traditional user manuals.
+
+With the goal of remaining as lean and productive as possible while adequately documenting our work, we favor user stories for pre-development and use frameworks, intuitive programming languages, integration testing, and code repositories during the development phase. Our primary goal in producing any documentation is ease of use for the next person who maintains or builds upon the software.
