@@ -1,9 +1,22 @@
-# Elite:Dangerous HINTWIZ Project
-## Functional specifications
-- Static website produced using HTML
-- Styled using CSS
-- JavaScript not required, but can be implemented
-- No Lorem ipsum text
+# Elite:Dangerous HINTWIZ Project - MS1
+## Functional specifications - Given by Code Institute
+- LO1: Design a front end web application based on the principles of user experience design, accessibility and responsivity.
+- LO2: Develop and implement a static front end web application using HTML and css
+- LO3: Maximize future maintainability through documentation, code structure and organisation
+- LO4: Use version control to maintain, upload and share code with developers
+- LO5: Test and deploy a front end application to a cloud platform
+
+### What this means
+- Think like a user and produce a website that is easy to navigate and understand.
+- Keep the backdrop from being distracting.
+- Ensure the website is standard in terms of style.
+- Ensure that there is accessibility even for those people who use assistive technology
+- Make sure the website responds to different devices.  No point in a website that breaks when viewed on mobile.
+- Static website produced using HTML (passing quality check)
+- Styled using CSS and bootstrap (passing quality check)
+- JavaScript not required, but can be implemented. For example, bootstrap will use JQuery.
+- No Lorem ipsum text.
+- Ensure this is fully documented and commented to be clear to any developer reading through.
 
 User stories are an effective tool to identify and describe the functionality needed from the user’s perspective, and can be used as acceptance criteria. Developers can also use the same domain language as in user stories to develop nomenclature in the software, so taking care to name objects clearly and logically helps ensure that the code correlates with the requirements.
 
