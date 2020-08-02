@@ -18,7 +18,19 @@
 - No Lorem ipsum text.
 - Ensure this is fully documented and commented to be clear to any developer reading through.
 
-User stories are an effective tool to identify and describe the functionality needed from the user’s perspective, and can be used as acceptance criteria. Developers can also use the same domain language as in user stories to develop nomenclature in the software, so taking care to name objects clearly and logically helps ensure that the code correlates with the requirements.
+##User stories
+- As a user who has never played the game, I may want to see a trailer
+- As a user who has never played the game, I would like a review to know what the developer's thoughts on the game are
+- As a user, I want to know how to start in a new game of Elite quickly
+- As a user, I want to know which jobs I take early on in Elite, with advantages and disadvantages of each
+- As a user, I want to know how different ships perform different jobs
+- As a user, I want to see something eye-catching and professional - designed for
+- As a user, I don't like cluttered pages with too much information - designed for
+- As a user, I want everything that I can interact with to be obvious - designed for
+- As a user, I want clear links that take me to where I need to go - designed for
+- As a user, I may want to add the developer to my social media
+
+ are an effective tool to identify and describe the functionality needed from the user’s perspective, and can be used as acceptance criteria. Developers can also use the same domain language as in user stories to develop nomenclature in the software, so taking care to name objects clearly and logically helps ensure that the code correlates with the requirements.
 
 Entity relationship diagrams present users and objects (entities), relationships, and attributes in graphical format. They can be particularly useful for complex projects with large development teams, and help ensure that everyone understands the relationships between the different objects before development begins.
 
