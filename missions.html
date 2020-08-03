@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<section id="backdrop">
-</section>
 
 <head>
   <meta charset="UTF-8" />
@@ -16,9 +14,11 @@
 </head>
 
 <body>
-  <section class="row">
+  <div id="backdrop">
+  </div>
+  <div class="row">
     <nav class="navbar navbar-transparent navbar-expand-xl navbar-light col-12">
-      <a class="navbar-brand" href="index.html"><img src="./assets/pics/elitelogo.png" id="logo"></a><span id="subtitle"> ELITE: DANGEROUS</span>
+      <a class="navbar-brand" href="index.html"><img src="./assets/pics/elitelogo.png" id="logo" alt="HINTWIZ logo"></a><span id="subtitle"> ELITE: DANGEROUS</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,9 +37,9 @@
         </ul>
       </div>
     </nav>
-  </section>
-  <section id="spacer">
-  </section>
+  </div>
+  <div id="spacer">
+  </div>
   <section id="main">
     <h1>Types of Missions</h1>
     <p>In this section we will discuss the various types of missions available in Elite:Dangerous and whether you should do them.
@@ -76,16 +76,17 @@
   </section>
   <footer class="row justify-content-center">
     <div class="col-12 col-md-6 col-xl-4" id="madeby">
-      <p>Made By Ryan Guest - Milestone 1 Project for Code Institute</p>
+      <p>Please follow HINTWIZ on our social media accounts: <a href="https://twitter.com/" target="_blank" id="twittericon"><i class="fab fa-twitter-square fa-lg"></i></a><a href="https://www.facebook.com/" target="_blank" id="facebookicon"><i
+            class="fab fa-facebook-square fa-lg"></i></a></p>
     </div>
     <div class="col-12 col-md-2 offset-md-4 col-xl-2 offset-xl-6">
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#legalModal">
         Legal Information
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="legalModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -100,6 +101,7 @@
               <h5>Credit for images to:</h5>
               <p>Elite:Dangerous - Frontier Developments PLC</p>
               <p>https://www.retrogamer.net/retro_games80/</p>
+              <p>Stack Overflow User: Knightkiddo</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">
@@ -109,6 +111,7 @@
           </div>
         </div>
       </div>
+    </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/uxl/popper.min.js"></script>
