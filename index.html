@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Head Section-->
 
 <head>
   <title>Elite:Dangerous Review and Hints</title>
@@ -11,18 +12,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link href="jqueryui/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <script src="https://kit.fontawesome.com/5b493034fa.js" crossorigin="anonymous"></script>
 </head>
+<!--body section-->
 
 <body>
+  <!--background image-->
   <div id="backdrop">
   </div>
+  <!--navbar-->
   <div class="row">
     <nav class="navbar navbar-transparent navbar-expand-xl navbar-light col-12">
       <a class="navbar-brand" href="index.html"><img src="./assets/pics/elitelogo.png" id="logo" alt="Hintwiz logo"></a><span id="subtitle"> ELITE: DANGEROUS</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      <!--navbar links-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -38,14 +43,19 @@
       </div>
     </nav>
   </div>
+  <!--spacer to make the content appear below the nav-->
   <div id="spacer">
   </div>
+  <!--start of written content-->
   <section id="content" class="row d-none d-md-flex ">
     <div id="introduction" class="col-12 col-md-6 col-xl-8">
-      <h1>ELITE:DANGEROUS <button class="btn btn-secondary btn-lg video-modal" data-video="https://www.youtube.com/embed/YESNObZJTgQ" data-toggle="modal" data-target="#videoModal" id="trailerbutton">Trailer</button></h1>
+      <h1>ELITE:DANGEROUS
+        <!--trailer button-->
+        <button class="btn btn-secondary btn-lg video-modal" data-video="https://www.youtube.com/embed/YESNObZJTgQ" data-toggle="modal" data-target="#videoModal" id="trailerbutton">Trailer</button>
+      </h1>
 
       <!--modal for trailer-->
-      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -53,37 +63,41 @@
             </div>
             <div class="modal-body">
               <div class="embed-container">
-                <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+                <iframe height="350" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      <!--history article-->
       <h3>History</h3>
       <p>In 1984, a relatively small company by the name of Acornsoft produced the game Elite, with wireframe graphics and some basic twitch gameplay. For it's time it was a marvel of what computing could achieve, creating a vibrant universe in which
         players could take on whatever role they wanted. Although basic, it proved to be enough of a hit for other games to be based on the formula and in 1993 it spawned a sequel by the name of Frontier: Elite 2. This particular specimen had a lot
         more colour, vibrancy and Newtonian physics, but still kept the core Elite experience. The universe was still open ended. It was just much bigger. There was a further sequel in 1995 called Frontier: First Encounters. This was a much more
         linear, mission based game and had a storyline that could be "beat" as opposed to it's earlier counterparts. Finally in 2014, Elite: Dangerous was created, using modern graphics and allowing many players to occupy the same universe.</p>
     </div>
+    <!--picture of original elite-->
     <div id="introduction-picture" class="d-none d-md-block col-md-6 col-xl-4">
       <div id="eliteoriginal">
       </div>
       <p><small>Original wireframe graphics</small></p>
     </div>
   </section>
+  <!--picture of modern day elite-->
   <section id="reviewRow" class="row d-none d-md-flex ">
     <div class="d-none d-md-block col-12 col-md-6 col-xl-4" id="elite-dangerous-graphics">
       <div id="elite-pic">
       </div>
       <p><small>Elite:Dangerous graphics</small></p>
     </div>
+    <!--review section-->
     <div class="col-12 col-md-6 col-xl-8" id="review">
       <h3>First Five Hours Review</h3>
       <p>As a pc gamer...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
+  <!--hints section-->
   <section id="hintsRow" class="row d-none d-md-flex ">
     <div class="col-md-6 col-xl-8" id="hints">
       <h3>How Do I Get Started?</h3>
@@ -94,12 +108,14 @@
         est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
+    <!--picture to demonstrate hints section-->
     <div class="d-none d-md-block col-12 col-md-6 col-xl-4" id="elite-dangerous-graphics2">
       <div id="elite-pic2">
       </div>
       <p><small>One of your MANY menus</small></p>
     </div>
   </section>
+  <!--Tabs section - On mobile devices this will appear instead of long reams of text allowing ease of use-->
   <div id="accordionSection">
     <div id="tabs">
       <ul>
@@ -107,9 +123,12 @@
         <li><a href="#tabs-2">First Five Hours Review</a></li>
         <li><a href="#tabs-3">How Do I Get Started?</a></li>
       </ul>
+      <!--History-->
       <div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.</div>
+      <!--Review-->
       <div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+      <!--Hints-->
       <div id="tabs-3">You will start in the universe with only the smallest ship at your fingertips...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis
         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -120,6 +139,7 @@
     </div>
   </div>
   <hr />
+  <!--Prettified links-->
   <section id="links" class="row">
     <h3 class="col-12">Links</h3>
     <div id="shipslink" class="col-12 col-xl-6">
@@ -135,18 +155,20 @@
       </a>
     </div>
   </section>
+  <!--Footer with made by information, legal information and social media links-->
   <footer class="row justify-content-center">
     <div class="col-12 col-md-6 col-xl-4" id="madeby">
-      <p>Made By Ryan Guest - Milestone 1 Project for Code Institute</p>
+      <p>Please follow HINTWIZ on our social media accounts: <a href="https://twitter.com/" target="_blank" id="twittericon"><i class="fab fa-twitter-square fa-lg"></i></a><a href="https://www.facebook.com/" target="_blank" id="facebookicon"><i
+            class="fab fa-facebook-square fa-lg"></i></a></p>
     </div>
     <div class="col-12 col-md-2 offset-md-4 col-xl-2 offset-xl-6">
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#legalModal">
         Legal Information
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal fade" id="legalModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">

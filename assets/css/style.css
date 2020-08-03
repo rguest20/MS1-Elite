@@ -247,6 +247,24 @@ body{
   background-color: rgba(200,200,200,0.8);
   color: #000;
 }
+
+footer{
+  margin-top: 10px;
+  color: #494949;
+}
+
+#twittericon, #facebookicon{
+  margin-left: 10px;
+}
+
+i.fab {
+  text-decoration: none;
+  color: #494949;
+}
+
+i.fab:hover{
+  font-size: 25px;
+}
 @keyframes linkHover{
   0%{
     opacity: 1;
