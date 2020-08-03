@@ -18,7 +18,7 @@
 - No Lorem ipsum text.
 - Ensure this is fully documented and commented to be clear to any developer reading through.
 
-##User stories
+## User stories
 - As a user who has never played the game, I may want to see a trailer
 - As a user who has never played the game, I would like a review to know what the developer's thoughts on the game are
 - As a user, I want to know how to start in a new game of Elite quickly
