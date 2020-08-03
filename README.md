@@ -55,3 +55,6 @@ Proficient use of some of the tools discussed previously can eliminate the need 
 The need for extensive end-user documentation is largely disappearing as software becomes increasingly intuitive, with particular emphasis on User Experience and User Interface design. Moreover, screencasts are now preferred over traditional user manuals.
 
 With the goal of remaining as lean and productive as possible while adequately documenting our work, we favor user stories for pre-development and use frameworks, intuitive programming languages, integration testing, and code repositories during the development phase. Our primary goal in producing any documentation is ease of use for the next person who maintains or builds upon the software.
+
+## Known issues
+On window resize the styling does not work with the ships page.  Looking at a JavaScript solution to this.

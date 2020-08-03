@@ -146,13 +146,45 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="jqueryui/external/jquery/jquery.js"></script>
   <script src="jqueryui/jquery-ui.js"></script>
-  <script src="script.js"></script>
   <script>
     /*moves text if window is small*/
-    if ($(window).width() <= 992) {
-      $('#sidewinder').detach().prependTo('#sidewindertextsmall');
-      $('#eagle').detach().prependTo('#eagletextsmall');
-    }
+    const sidewinderswap1 = $('#sidewindertextsmall').clone();
+    const sidewinderswap2 = $('#sidewinder').clone();
+    const eagleswap1 = $('#eagletextsmall').clone();
+    const eagleswap2 = $('#eagle').clone();
+
+
+    function swaparound() {
+
+      $('#sidewinder').replaceWith(sidewinderswap1);
+      $('#sidewindertextsmall').replaceWith(sidewinderswap2);
+      $('#eagle').replaceWith(eagleswap1);
+      $('#eagletextsmall').replaceWith(eagleswap2);
+    };
+
+    $(window).on('load', function() {
+      var win = $(this); //this = window
+      if (win.width() <= 992) {
+        swaparound()
+      }
+    });
+
+    $(window).on('resize', function() {
+      var win = $(this); //this = window
+      if (win.width() <= 990) {
+        swaparound()
+      } else {
+        location.reload();
+      }
+    });
+    // window.onresize = function {
+    //   if (window.innerwidth === 992) {
+    //     swaparound()
+    //   }
+    // }
+
+
+
 
     /*class change function to show or hide information.  Animation included to make it look nicer*/
     function showInfoSidewinder() {
