@@ -294,7 +294,7 @@ i.fab:hover{
   #pic1, #pic2, #pic3{
     height: 200px;
   }
-  #hoveringText2{
+  .hoveringText2{
     bottom:199px;
   }
 }

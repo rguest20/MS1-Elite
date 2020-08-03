@@ -49,15 +49,17 @@
   <div id="ships">
     <div id="shipPics" class="row">
       <!--sidewinder picture-->
-      <div id="pic1" class="col-12 col-lg-4"><a href="#sidewinder"><img src="./assets/pics/sidewinder.png" alt="Sidewinder in hangar" id="pic1img" />
+      <div id="pic1" class="col-12 col-lg-4"><a href="#"><img src="./assets/pics/sidewinder.png" alt="Sidewinder in hangar" id="pic1img" />
           <div class="hoveringText2">Sidewinder</div>
         </a></div>
+      <div id="sidewindertextsmall"></div>
       <!--eagle picture-->
-      <div id="pic2" class="col-12 col-lg-4"><a href="#eagle"><img src="./assets/pics/Eagle.png" alt="Eagle in hangar" id="pic2img" />
+      <div id="pic2" class="col-12 col-lg-4"><a href="#"><img src="./assets/pics/Eagle.png" alt="Eagle in hangar" id="pic2img" />
           <div class="hoveringText2">Eagle</div>
         </a></div>
+      <div id="eagletextsmall"></div>
       <!--hauler picture-->
-      <div id="pic3" class="col-12 col-lg-4"><a href="#hauler"><img src="./assets/pics/hauler.png" alt="Hauler in hangar" id="pic3img" />
+      <div id="pic3" class="col-12 col-lg-4"><a href="#"><img src="./assets/pics/hauler.png" alt="Hauler in hangar" id="pic3img" />
           <div class="hoveringText2">Hauler</div>
         </a></div>
     </div>
@@ -66,21 +68,20 @@
   <div id="text">
     <div id="sidewinder" class="d-none">
       <h3>Sidewinder</h3>
-      <div id="sidewindertext">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-    <div id="eagle" class="d-none">
-      <h3>Eagle</h3>
-      <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div id="hauler" class="d-none">
-      <h3>Hauler</h3>
-      <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+  </div>
+  <div id="eagle" class="d-none">
+    <h3>Eagle</h3>
+    <p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div id="hauler" class="d-none">
+    <h3>Hauler</h3>
+    <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
   </div>
   <hr />
   <!--Prettified links-->
@@ -146,14 +147,19 @@
   <script src="jqueryui/external/jquery/jquery.js"></script>
   <script src="jqueryui/jquery-ui.js"></script>
   <script src="script.js"></script>
-  <script src="anime.min.js"></script>
   <script>
+    /*moves text if window is small*/
+    if ($(window).width() <= 992) {
+      $('#sidewinder').detach().prependTo('#sidewindertextsmall');
+      $('#eagle').detach().prependTo('#eagletextsmall');
+    }
+
     /*class change function to show or hide information.  Animation included to make it look nicer*/
     function showInfoSidewinder() {
       $("#sidewinder").removeClass("d-none");
       if ($("#sidewinder").css("display", "block")) {
         $("#sidewinder").css("animation", "fadeIn")
-        $("#sidewinder").css("animation-duration", "0.5s")
+        $("#sidewinder").css("animation-duration", "2s")
       }
       $("#eagle").addClass("d-none");
       $("#hauler").addClass("d-none");
@@ -164,7 +170,7 @@
       $("#eagle").removeClass("d-none");
       if ($("#eagle").css("display", "block")) {
         $("#eagle").css("animation", "fadeIn")
-        $("#eagle").css("animation-duration", "0.5s")
+        $("#eagle").css("animation-duration", "2s")
       }
       $("#hauler").addClass("d-none");
     }
@@ -175,7 +181,7 @@
       $("#hauler").removeClass("d-none");
       if ($("#hauler").css("display", "block")) {
         $("#hauler").css("animation", "fadeIn")
-        $("#hauler").css("animation-duration", "0.5s")
+        $("#hauler").css("animation-duration", "2s")
       }
     }
     /*Actual code for picture click*/
