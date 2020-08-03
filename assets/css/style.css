@@ -2,7 +2,7 @@
 font-family: 'Eurostile';
 font-style: normal;
 font-weight: normal;
-src: local('Eurostile'), url('../../eurostile.woff') format('woff');
+src: local('Eurostile'), url('../font/eurostile.woff') format('woff');
 }
 
 
