@@ -1,4 +1,7 @@
-#11 Elite:Dangerous HINTWIZ Project - MS1
+# Elite:Dangerous HINTWIZ Project - MS1
+
+# Pre-development
+
 ## Functional specifications - Given by Code Institute
 - LO1: Design a front end web application based on the principles of user experience design, accessibility and responsivity.
 - LO2: Develop and implement a static front end web application using HTML and css
@@ -19,42 +22,45 @@
 - Ensure this is fully documented and commented to be clear to any developer reading through.
 
 ## User stories
-- As a user who has never played the game, I may want to see a trailer
-- As a user who has never played the game, I would like a review to know what the developer's thoughts on the game are
-- As a user, I want to know how to start in a new game of Elite quickly
-- As a user, I want to know which jobs I take early on in Elite, with advantages and disadvantages of each
-- As a user, I want to know how different ships perform different jobs
-- As a user, I want to see something eye-catching and professional - designed for
-- As a user, I don't like cluttered pages with too much information - designed for
-- As a user, I want everything that I can interact with to be obvious - designed for
-- As a user, I want clear links that take me to where I need to go - designed for
-- As a user, I may want to add the developer to my social media
+- As a user who has never played the game, I may want to see a trailer so that I can decide on my level of interest in the game
+- As a user who has never played the game, I would like a review to know what the developer's thoughts on the game are so I can judge whether or not I want to play it.
+- As a user, I want to know how to start in a new game of Elite quickly so I do not have to work out the controls for myself
+- As a user, I want to know which jobs I take early on in Elite, with advantages and disadvantages of each so I can get going faster
+- As a user, I want to know how different ships perform different jobs so I can spend my in game currency more effectively
+- As a user, I want to see something eye-catching and professional so my interest is maintained- designed for
+- As a user, I don't like cluttered pages with too much information otherwise I may lose the will to continue reading - designed for
+- As a user, I want everything that I can interact with to be obvious so I do not waste time looking for things - designed for
+- As a user, I want clear links that take me to where I need to go so I can navigate more easily- designed for
+- As a user, I may want to add the developer to my social media so I can ask further questions - designed for
 
- are an effective tool to identify and describe the functionality needed from the user’s perspective, and can be used as acceptance criteria. Developers can also use the same domain language as in user stories to develop nomenclature in the software, so taking care to name objects clearly and logically helps ensure that the code correlates with the requirements.
+**Entity relationship**
 
-Entity relationship diagrams present users and objects (entities), relationships, and attributes in graphical format. They can be particularly useful for complex projects with large development teams, and help ensure that everyone understands the relationships between the different objects before development begins.
+---
 
-While it’s important to document functional requirements at a high level before moving into the development phase, excessive or overly detailed pre-development documentation can potentially restrict the project team’s options for developing appropriate solutions; it may also become obsolete later in the project life cycle as new requirements, problems, and details emerge during the project. Extensive documentation is also time-consuming to maintain, so it’s best to create more detailed documentation later in the project life cycle.
+# Post-Development
 
-DOCUMENTATION DURING DEVELOPMENT
-It’s important during the development phase to clearly represent the high-level architecture and note any deviations from typical practice as the project progresses. Development documentation at this stage is typically automated through good programming practices rather than manually written into documents. This can be facilitated by the use of frameworks, choice of programming language, and in the messages in your version control/code repositories.
+To access the page go to your favourite browser and type "<https://playground.golf-ladder-aqualate.net>" into the search bar. The code is hosted at "<https://github.com/rguest20/MS1-Elite>".
 
-Frameworks are specific software libraries that serve as a filing system in a standard format to store code and procedures. Ruby on Rails was the first framework designed specifically to meet the needs of web application development, and is considered to be the gold standard that other frameworks are modeled upon. Each framework is designed to be used with a particular programming language – e.g., Ruby on Rails with Ruby, Django with Python and Cake with PHP.
+### Dependencies
+#### JavaScript
+There are several JavaScript libraries that are required to ensure the page works, but these are included in the hosted site, so no dependencies are needed for viewing the site. For the sake of clarity, these are the JavaScript libraries that are used:
+- JQuery
+- JQueryUI
+- Animate.js
+- Popper.js
 
-Programming languages have various forms of syntax requiring various levels of comments/remarks to be clearly documented and understood. Languages using syntax close to natural English clearly show the intent without the need of excessive documentation or comments. We chose to work in Ruby because it has a very clear syntax and therefore can be described as a self-documenting language (Python is another such language).
+There is also some JavaScript included on the pages, but this is bespoke using the dependencies.
+#### CSS
+Again, several CSS dependencies are used but are included with the site, so do not need anything installing to use. Again, for the sake of clarity these dependencies are listed below:
+- Bootstrap 4
+- Font-Awesome 5
+- Google Fonts
+- JQueryUI
 
-Version control/code repositories can also be considered to be part of documentation. To make repositories useful in that way, developers should insert an explanation of what is being “committed” (describing how the updated source code affects the project).
+CSS for the pages is included in a separate stylesheet, but this is again hosted and built bespoke to extend the dependencies.
 
-Most of the tools mentioned above support project teams in creating effective documentation easily “as they go,” requiring minimum time and effort, which also means that it is very cost effective for the client.
-
-POST-DEVELOPMENT DOCUMENTATION
-Post-development documentation is typically produced in order to support the team of developers responsible for maintaining the software or to teach end-users how to use the software.
-
-Proficient use of some of the tools discussed previously can eliminate the need to pull divergent results and ideas together at the end of a project with additional documentation. However, at the very minimum it is good software project etiquette to document the procedure describing how to set up and run the application, helping future developers to get up and running quickly.
-
-The need for extensive end-user documentation is largely disappearing as software becomes increasingly intuitive, with particular emphasis on User Experience and User Interface design. Moreover, screencasts are now preferred over traditional user manuals.
-
-With the goal of remaining as lean and productive as possible while adequately documenting our work, we favor user stories for pre-development and use frameworks, intuitive programming languages, integration testing, and code repositories during the development phase. Our primary goal in producing any documentation is ease of use for the next person who maintains or builds upon the software.
+## How to use
+On arrival to the page you will be presented with the following:
 
 ## Known issues
-On window resize the styling does not work with the ships page.  Looking at a JavaScript solution to this. - Fix hacked in.
+New front page requires styling and a footer
