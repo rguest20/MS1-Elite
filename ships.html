@@ -12,10 +12,10 @@
   <link href="jqueryui/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <title>Elite:Dangerous Review and Hints</title>
+  <title>Elite:Dangerous Early Ships</title>
 </head>
 
-<body>
+<body onresize="emptyall()">
   <!--background image-->
   <div id="backdrop">
   </div>
@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home </a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="missions.html">Mission Types</a>
@@ -52,12 +52,12 @@
       <div id="pic1" class="col-12 col-lg-4"><a href="#"><img src="./assets/pics/sidewinder.png" alt="Sidewinder in hangar" id="pic1img" />
           <div class="hoveringText2">Sidewinder</div>
         </a></div>
-      <div id="sidewindertextsmall"></div>
+      <div id="sidewindertextsmall" class="d-none"></div>
       <!--eagle picture-->
       <div id="pic2" class="col-12 col-lg-4"><a href="#"><img src="./assets/pics/Eagle.png" alt="Eagle in hangar" id="pic2img" />
           <div class="hoveringText2">Eagle</div>
         </a></div>
-      <div id="eagletextsmall"></div>
+      <div id="eagletextsmall" class="d-none"></div>
       <!--hauler picture-->
       <div id="pic3" class="col-12 col-lg-4"><a href="#"><img src="./assets/pics/hauler.png" alt="Hauler in hangar" id="pic3img" />
           <div class="hoveringText2">Hauler</div>
@@ -68,8 +68,8 @@
   <div id="text">
     <div id="sidewinder" class="d-none">
       <h3>Sidewinder</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p id='sidewindertext'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
   <div id="eagle" class="d-none">
@@ -148,68 +148,74 @@
   <script src="jqueryui/jquery-ui.js"></script>
   <script>
     /*moves text if window is small*/
-    const sidewinderswap1 = $('#sidewindertextsmall').clone();
-    const sidewinderswap2 = $('#sidewinder').clone();
-    const eagleswap1 = $('#eagletextsmall').clone();
-    const eagleswap2 = $('#eagle').clone();
+    const sidewinderswap = $('#sidewinder').clone()
+    $('#sidewindertextsmall').prepend(sidewinderswap.html())
+    const eagleswap = $('#eagle').clone()
+    $('#eagletextsmall').prepend(eagleswap.html())
 
-
-    function swaparound() {
-
-      $('#sidewinder').replaceWith(sidewinderswap1);
-      $('#sidewindertextsmall').replaceWith(sidewinderswap2);
-      $('#eagle').replaceWith(eagleswap1);
-      $('#eagletextsmall').replaceWith(eagleswap2);
-    };
-
-    $(window).on('load', function() {
-      var win = $(this); //this = window
-      if (win.width() <= 992) {
-        swaparound()
-      }
-    });
-
-    $(window).on('resize', function() {
-      var win = $(this); //this = window
-      if (win.width() <= 990) {
-        swaparound()
-      } else {
-        location.reload();
-      }
-    });
-    // window.onresize = function {
-    //   if (window.innerwidth === 992) {
-    //     swaparound()
-    //   }
-    // }
-
-
+    function emptyall() {
+      $("#sidewinder").addClass("d-none");
+      $("#eagle").addClass("d-none");
+      $("#hauler").addClass("d-none");
+      $("#eagletextsmall").addClass("d-none");
+      $("#sidewindertextsmall").addClass("d-none");
+    }
 
 
     /*class change function to show or hide information.  Animation included to make it look nicer*/
     function showInfoSidewinder() {
-      $("#sidewinder").removeClass("d-none");
-      if ($("#sidewinder").css("display", "block")) {
-        $("#sidewinder").css("animation", "fadeIn")
-        $("#sidewinder").css("animation-duration", "2s")
+      if ($(document).width() >= 992) {
+        $("#sidewinder").removeClass("d-none");
+        if ($("#sidewinder").css("display", "block")) {
+          $("#sidewinder").css("animation", "fadeIn")
+          $("#sidewinder").css("animation-duration", "2s")
+        }
+        $("#eagle").addClass("d-none");
+        $("#hauler").addClass("d-none");
+        $("#eagletextsmall").addClass("d-none");
+        $("#sidewindertextsmall").addClass("d-none");
+      } else {
+        $("#sidewindertextsmall").removeClass("d-none");
+        if ($("#sidewindertextsmall").css("display", "block")) {
+          $("#sidewindertextsmall").css("animation", "fadeIn")
+          $("#sidewindertextsmall").css("animation-duration", "2s")
+        }
+        $("#sidewinder").addClass("d-none");
+        $("#eagle").addClass("d-none");
+        $("#hauler").addClass("d-none");
+        $("#eagletextsmall").addClass("d-none");
       }
-      $("#eagle").addClass("d-none");
-      $("#hauler").addClass("d-none");
     }
 
     function showInfoEagle() {
-      $("#sidewinder").addClass("d-none");
-      $("#eagle").removeClass("d-none");
-      if ($("#eagle").css("display", "block")) {
-        $("#eagle").css("animation", "fadeIn")
-        $("#eagle").css("animation-duration", "2s")
+      if ($(document).width() >= 992) {
+        $("#eagle").removeClass("d-none");
+        if ($("#eagle").css("display", "block")) {
+          $("#eagle").css("animation", "fadeIn")
+          $("#eagle").css("animation-duration", "2s")
+        }
+        $("#sidewinder").addClass("d-none");
+        $("#hauler").addClass("d-none");
+        $("#eagletextsmall").addClass("d-none");
+        $("#sidewindertextsmall").addClass("d-none");
+      } else {
+        $("#eagletextsmall").removeClass("d-none");
+        if ($("#eagletextsmall").css("display", "block")) {
+          $("#eagletextsmall").css("animation", "fadeIn")
+          $("#eagletextsmall").css("animation-duration", "2s")
+        }
+        $("#sidewinder").addClass("d-none");
+        $("#eagle").addClass("d-none");
+        $("#hauler").addClass("d-none");
+        $("#sidewindertextsmall").addClass("d-none");
       }
-      $("#hauler").addClass("d-none");
     }
 
     function showInfoHauler() {
       $("#sidewinder").addClass("d-none");
       $("#eagle").addClass("d-none");
+      $("#sidewindertextsmall").addClass("d-none");
+      $("#eagletextsmall").addClass("d-none");
       $("#hauler").removeClass("d-none");
       if ($("#hauler").css("display", "block")) {
         $("#hauler").css("animation", "fadeIn")
