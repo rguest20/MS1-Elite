@@ -13,18 +13,44 @@ font-weight: normal;
 src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
 }
 
+html{
+  min-width: 610px;
+}
+
 body{
   font-family:'Eurostile';
   font-weight:normal;
+  margin-left: 20px;
+}
+
+#logodiv img{
+  display: block;
+  margin: 0 auto;
+}
+
+.gamesbar{
+  height: 300px;
+  border: 1px solid #000000;
+  text-align: center;
+  color: #999999;
+  text-decoration: none;
+}
+
+#elite img{
+  height:100%;
+  max-width: 100%;
+  display:block;
+  margin: 0 auto;
 }
 
 .navbar{
   width: 100vw;
-  position: absolute;
+  position: fixed;
   background-color: rgba(50, 50, 50, 0.8);
   max-width: 100vw;
   color: lightGrey;
   z-index: 4;
+  margin-left: -20px;
 }
 
 .navbar .navbar-nav > li > a {
@@ -45,6 +71,7 @@ body{
 }
 
 #backdrop{
+  margin-left: -20px;
   transform: translate(1.1);
   display:flex;
   background: url("https://golf-ladder-aqualate.net/assets/shipinflight.png") no-repeat center;
@@ -222,6 +249,7 @@ body{
 }
 
 #pic1, #pic2, #pic3{
+  margin-top: 10px;
   height: 300px;
 }
 
@@ -233,16 +261,14 @@ body{
 }
 
 #pic1:hover, #pic2:hover, #pic3:hover{
-  animation-name: picHover;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  opacity: 0.5;
 }
 
 .hoveringText2{
   position:relative;
   text-align: right;
   letter-spacing: 1.5px;
-  bottom:299px;
+  bottom:300px;
   z-index: 1;
   background-color: rgba(200,200,200,0.8);
   color: #000;
@@ -255,6 +281,10 @@ footer{
 
 #twittericon, #facebookicon{
   margin-left: 10px;
+}
+
+#legalinfo{
+  float:right;
 }
 
 i.fab {
@@ -277,16 +307,6 @@ i.fab:hover{
   }
 }
 
-@keyframes picHover {
- from {
-   transform: scale(1);
-   z-index: 0;
- }
- to{
-   transform: scale(1.03);
-   z-index: 2;
-  }
-}
 @media screen and (max-width: 1200px){
   #navbarSupportedContent {
     margin-left:0;
@@ -295,12 +315,12 @@ i.fab:hover{
     height: 200px;
   }
   .hoveringText2{
-    bottom:199px;
+    bottom:200px;
   }
 }
 
-@media screen and (max-width: 281px){
+@media screen and (max-width: 310px){
   #spacer{
-    height: 150px;
+    height: 200px;
   }
 }
