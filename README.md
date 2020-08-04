@@ -1,5 +1,5 @@
 # Elite:Dangerous HINTWIZ Project - MS1
-[Functional Specification]<#functional-specifications---given-by-code-institute>, [User Stories] <#user-stories>, Entity Relationship, [Dependencies]<#dependencies>, [How To Use]<#how-to-use>, [UX Design]<#ux-design>
+[Functional Specification]<#functional-specifications---given-by-code-institute>, [User Stories] <ksjdhkhsdf#user-stories>, Entity Relationship, [Dependencies]<#dependencies>, [How To Use]<#how-to-use>, [UX Design]<#ux-design>
 # Pre-development
 
 ## Functional specifications - Given by Code Institute
