@@ -1,4 +1,4 @@
-# Elite:Dangerous HINTWIZ Project - MS1
+#11 Elite:Dangerous HINTWIZ Project - MS1
 ## Functional specifications - Given by Code Institute
 - LO1: Design a front end web application based on the principles of user experience design, accessibility and responsivity.
 - LO2: Develop and implement a static front end web application using HTML and css
