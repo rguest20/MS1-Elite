@@ -1,5 +1,5 @@
 # Elite:Dangerous HINTWIZ Project - MS1
-
+[Functional Specification]<#functional-specifications---given-by-code-institute>, [User Stories] <#user-stories>, Entity Relationship, [Dependencies]<#dependencies>, [How To Use]<#how-to-use>, [UX Design]<#ux-design>
 # Pre-development
 
 ## Functional specifications - Given by Code Institute
@@ -39,7 +39,7 @@
 
 # Post-Development
 
-To access the page go to your favourite browser and type "<https://playground.golf-ladder-aqualate.net>" into the search bar. The code is hosted at "<https://github.com/rguest20/MS1-Elite>".
+To access the page go to your favourite browser and type "<http://playground.golf-ladder-aqualate.net/>" into the search bar. The code is hosted at "<https://github.com/rguest20/MS1-Elite>".
 
 ### Dependencies
 #### JavaScript
@@ -60,7 +60,16 @@ Again, several CSS dependencies are used but are included with the site, so do n
 CSS for the pages is included in a separate stylesheet, but this is again hosted and built bespoke to extend the dependencies.
 
 ## How to use
+### Home page
 On arrival to the page you will be presented with the following:
+
+Upon clicking on the highlighted area, this will take you to the main page for Elite:Dangerous.
+
+### Elite Dangerous Home page
+This page includes a large amount of information about the game including the trailer, a review and some hints on how to start the game.
+
+## UX design
+To make the design more user friendly I have done the following:
 
 ## Known issues
 New front page requires styling and a footer
