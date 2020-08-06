@@ -319,9 +319,13 @@ i.fab:hover{
   }
   #pic1, #pic2, #pic3{
     height: 200px;
+    padding-left: 0;
   }
   .hoveringText2{
     bottom:200px;
+  }
+  #homelink, #missionlink, #shipslink{
+    padding-left: 0;
   }
 }
 
