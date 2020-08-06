@@ -17,14 +17,15 @@ html{
   min-width: 500px;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 body{
   font-family:'Eurostile';
   font-weight:normal;
-  margin-left: 20px;
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 
 }
 
@@ -74,15 +75,14 @@ body{
   margin-right: 30px;
 }
 
-#backdrop{
-  margin-left: -20px;
-  transform: translate(1.1);
+#backdrop-pic{
+  padding-left:0;
+  padding-right: 0;
   display:fixed;
-  background: url("https://golf-ladder-aqualate.net/assets/shipinflight.png") no-repeat center;
   filter:blur(4px);
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: -1;
   opacity: 0.45;
@@ -111,7 +111,7 @@ body{
 }
 
 
-#spacer{
+.spacer{
   height: 100px;
 }
 
@@ -185,7 +185,9 @@ body{
   background: url("https://golf-ladder-aqualate.net/assets/eliteinside.jpg") no-repeat center;
   background-size: 75% 90%;
 }
-
+#links{
+  width:100vw;
+}
 #shipslink{
   height:150px;
   width:100%;
@@ -281,8 +283,16 @@ body{
 }
 
 footer{
-  margin-top: 10px;
+  background-color: rgba(50, 50, 50, 1);
+  color: lightGrey !important;
+  margin-top: 15px;
   color: #494949;
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 100;
+  width: 100%;
 }
 
 #twittericon, #facebookicon{
@@ -295,7 +305,7 @@ footer{
 
 i.fab {
   text-decoration: none;
-  color: #494949;
+  color: lightGrey;
 }
 
 i.fab:hover{
@@ -319,18 +329,16 @@ i.fab:hover{
   }
   #pic1, #pic2, #pic3{
     height: 200px;
-    padding-left: 0;
   }
   .hoveringText2{
     bottom:200px;
   }
   #homelink, #missionlink, #shipslink{
-    padding-left: 0;
   }
 }
 
 @media screen and (max-width: 310px){
-  #spacer{
+  .spacer{
     height: 200px;
   }
 }
