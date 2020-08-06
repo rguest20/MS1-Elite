@@ -55,7 +55,6 @@ body{
   background-color: rgba(50, 50, 50, 1.0);
   color: lightGrey;
   z-index: 100;
-  margin-left: -20px;
 }
 
 .navbar .navbar-nav > li > a {
