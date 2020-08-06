@@ -14,13 +14,18 @@ src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
 }
 
 html{
-  min-width: 610px;
+  min-width: 500px;
+  height: 100vh;
+  width: 100vw;
 }
 
 body{
   font-family:'Eurostile';
   font-weight:normal;
   margin-left: 20px;
+  height: 100%;
+  width: 100%;
+
 }
 
 #logodiv img{
@@ -44,10 +49,9 @@ body{
 }
 
 .navbar{
-  width: 100vw;
-  position: fixed;
+  width: 100%;
+  position:fixed;
   background-color: rgba(50, 50, 50, 0.8);
-  max-width: 100vw;
   color: lightGrey;
   z-index: 4;
   margin-left: -20px;
@@ -73,12 +77,12 @@ body{
 #backdrop{
   margin-left: -20px;
   transform: translate(1.1);
-  display:flex;
+  display:fixed;
   background: url("https://golf-ladder-aqualate.net/assets/shipinflight.png") no-repeat center;
   filter:blur(4px);
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   z-index: -1;
   opacity: 0.45;
