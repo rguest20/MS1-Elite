@@ -50,36 +50,19 @@
   </div>
   <!--start of written content-->
   <section id="content" class="row d-none d-md-flex ">
-    <div id="introduction" class="col-12 col-md-6 col-xl-8">
+    <div id="review" class="col-12 col-md-6 col-xl-8">
       <h1>ELITE:DANGEROUS
-        <!--trailer button-->
-        <button class="btn btn-secondary btn-lg video-modal" data-video="https://www.youtube.com/embed/YESNObZJTgQ" data-toggle="modal" data-target="#videoModal" id="trailerbutton">Trailer</button>
-      </h1>
-
-      <!--modal for trailer-->
-      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-              <div class="embed-container">
-                <iframe height="350" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--history article-->
-      <h3>Review</h3>
-      <p>In 1984, a relatively small company by the name of Acornsoft produced the game Elite, with wireframe graphics and some basic twitch gameplay. For it's time it was a marvel of what computing could achieve, creating a vibrant universe in which
-        players could take on whatever role they wanted. Although basic, it proved to be enough of a hit for other games to be based on the formula and in 1993 it spawned a sequel by the name of Frontier: Elite 2. This particular specimen had a lot
-        more colour, vibrancy and Newtonian physics, but still kept the core Elite experience. The universe was still open ended. It was just much bigger. There was a further sequel in 1995 called Frontier: First Encounters. This was a much more
-        linear, mission based game and had a storyline that could be "beat" as opposed to it's earlier counterparts. Finally in 2014, Elite: Dangerous was created, using modern graphics and allowing many players to occupy the same universe.</p>
-      <p>So, how does it stack up? I like that Elite managed to keep the feel of the original game with a wide world that you can do whatever you want in. The aesthetic is phenominal with space feeling very alive. There are a lot of other ships in
-        sky and the AI will send you and itself messages. The combat is engaging and the variety on offer is brilliant. This all adds to the atmosphere. So, yes, I do think that Elite Dangerous managed to keep the feel of the first. <strong>For good,
-          or for bad.</strong> </p>
+        <!--Review article-->
+        <h3>Review</h3>
+        <p>In 1984, a relatively small company by the name of Acornsoft produced the game Elite, with wireframe graphics and some basic twitch gameplay. For it's time it was a marvel of what computing could achieve, creating a vibrant universe in
+          which
+          players could take on whatever role they wanted. Although basic, it proved to be enough of a hit for other games to be based on the formula and in 1993 it spawned a sequel by the name of Frontier: Elite 2. This particular specimen had a lot
+          more colour, vibrancy and Newtonian physics, but still kept the core Elite experience. The universe was still open ended. It was just much bigger. There was a further sequel in 1995 called Frontier: First Encounters. This was a much more
+          linear, mission based game and had a storyline that could be "beat" as opposed to it's earlier counterparts. Finally in 2014, Elite: Dangerous was created, using modern graphics and allowing many players to occupy the same universe.</p>
+        <p>So, how does it stack up? I like that Elite managed to keep the feel of the original game with a wide world that you can do whatever you want in. The aesthetic is phenominal with space feeling very alive. There are a lot of other ships in
+          sky and the AI will send you and itself messages. The combat is engaging and the variety on offer is brilliant. This all adds to the atmosphere. So, yes, I do think that Elite Dangerous managed to keep the feel of the first. <strong>For
+            good,
+            or for bad.</strong> </p>
     </div>
     <!--picture of original elite-->
     <div id="introduction-picture" class="d-none d-md-block col-md-6 col-xl-4">
@@ -106,23 +89,26 @@
         captivate you. There is just saving up for a bigger ship. This is Elite's legacy and it's greatest flaw.</p>
     </div>
   </section>
-  <!--hints section-->
-  <section id="hintsRow" class="row d-none d-md-flex ">
-    <div class="col-11 col-md-5 col-xl-7 offset-1" id="hints">
-      <h3>Scores</h3>
-      <p>The Good</p>
+  <!--score section-->
+  <section id="scores" class="row d-none d-md-flex ">
+    <div class="col-4 col-md-2 col-xl-3">
+      <h3>The Good<i class="fas fa-thumbs-up"></i></h3>
       <ul>
         <li>Beautiful game and sound design is really on key</li>
         <li>Wide variety of things to do</li>
         <li>Great ship customisation</li>
       </ul>
-      <p>The Bad</p>
+    </div>
+    <div class="col-4 col-md-2 col-xl-3">
+      <h3>The Bad<i class="fas fa-thumbs-down"></i></h3>
       <ul>
         <li>Microtransactions - cosmetic only, but still...</li>
         <li>Lack of any attempt at story</li>
         <li>Travelling...forever...and ever...and ever...and ever...</li>
       </ul>
-      <p>Final Score</p>
+    </div>
+    <div id="finalthoughts" class="col-4 col-md-2 col-xl-3">
+      <h3>Final Score <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h3>
       <ul>
         <li>Atmosphere (Graphics + Sound) - 8/10</li>
         <li>Story - 1/10</li>
@@ -130,11 +116,10 @@
         <li>OVERALL - 6/10</li>
       </ul>
     </div>
+    </div>
     <!--picture to demonstrate hints section-->
-    <div class="d-none d-md-block col-12 col-md-6 col-xl-4" id="elite-dangerous-graphics2">
-      <div id="elite-pic2">
-      </div>
-      <p><small>One of your MANY menus</small></p>
+    <div class="d-none d-md-block col-12 col-md-6 col-xl-3" id="elite-dangerous-graphics2">
+      <iframe src="https://www.youtube.com/embed/YESNObZJTgQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </section>
   <!--Tabs section - On mobile devices this will appear instead of long reams of text allowing ease of use-->
@@ -176,20 +161,20 @@
       </div>
       <!--Hints-->
       <div id="tabs-3">
-        <p>The Good</p>
+        <p>The Good<i class="fas fa-thumbs-up"></i></p>
         <ul>
           <li>Beautiful game and sound design is really on key</li>
           <li>Wide variety of things to do</li>
           <li>Great ship customisation</li>
         </ul>
-        <p>The Bad</p>
+        <p>The Bad<i class="fas fa-thumbs-down"></i></p>
         <ul>
           <li>Microtransactions - cosmetic only, but still...</li>
           <li>Lack of any attempt at story</li>
           <li>Travelling...forever...and ever...and ever...and ever...</li>
         </ul>
         <div id="finalthoughts">
-          <p>Final Score</p>
+          <p>Final Score<i class="fas fa-star">x3</i></p>
           <ul>
             <li>Atmosphere (Graphics + Sound) - 8/10</li>
             <li>Story - 1/10</li>
@@ -274,7 +259,7 @@
     $("#tabs").tabs();
 
     function hidetabs() {
-      if ($('#hintsRow').is(':visible')) {
+      if ($('#scores').is(':visible')) {
         $('#accordionSection').hide()
       } else {
         $('#accordionSection').show()
