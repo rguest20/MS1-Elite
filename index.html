@@ -33,6 +33,26 @@
         $('#mainlogo').css("animation", "");
       });
     });
+
+    window.onload = function() {
+      const cw = $('.gamesbar img').width();
+      $('.gamesbar img').css({
+        'height': cw + 'px'
+      });
+      $('.gamesbar').css({
+        'height': (cw + 50) + 'px'
+      });
+    };
+
+    window.onresize = function() {
+      const cw = $('.gamesbar img').width();
+      $('.gamesbar img').css({
+        'height': (cw) + 'px'
+      });
+      $('.gamesbar').css({
+        'height': (cw + 50) + 'px'
+      });
+    };
   </script>
 </head>
 
@@ -70,7 +90,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/uxl/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <footer class="row justify-content-center">
-    <hr class="col-12">
     <div class="col-6" id="madeby">
       <p>Please follow HINTWIZ on our social media accounts: <a href="https://twitter.com/" target="_blank" id="twittericon"><i class="fab fa-twitter-square fa-lg"></i></a><a href="https://www.facebook.com/" target="_blank" id="facebookicon"><i
             class="fab fa-facebook-square fa-lg"></i></a></p>
