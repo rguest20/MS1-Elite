@@ -32,6 +32,7 @@ body{
 }
 
 #logodiv{
+  height: 400px;
   animation: rubberBand;
   animation-duration: 1s;
 }
@@ -41,11 +42,63 @@ body{
   display: block;
   margin: 0 auto;
   width: 40%;
-  max-width: 500px;
+  min-width: 320px;
+  max-width: 450px;
 }
 
 #logodiv img:hover{
   animation-duration: 1s;
+}
+
+.typewritersection{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+
+}
+
+.typewriter{
+  margin: 0 auto;
+}
+
+#line1 {
+  flex: 0 1 100%;
+  overflow: hidden;
+  border-right: .15em solid #ffffff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(17, end),
+    blink-caret .75s step-end 0s 4 forwards ;
+}
+
+#line2 {
+  overflow: hidden;
+  visibility: hidden;
+  border-right: .15em solid #ffffff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(18, end),
+    blink-caret .75s step-end 4 forwards ;
+  animation-delay: 3.5s;
+  animation-fill-mode:forwards;
+}
+
+#line4{
+  overflow: hidden;
+  visibility: hidden;
+  border-right: .15em solid #000000;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 1.5s steps(5, end),
+    blink-caret .75s step-end infinite forwards;
+    animation-delay: 7s;
+  animation-fill-mode:forwards;
 }
 
 .gamesbar{
@@ -406,4 +459,15 @@ i.fab:hover{
   .spacer{
     height: 170px;
   }
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  1% {visibility: visible;}
+  to { width: 100%; visibility: visible;}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }

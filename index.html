@@ -35,22 +35,30 @@
     });
 
     window.onload = function() {
-      const cw = $('.gamesbar img').width();
+      let cw = $('.gamesbar img').width();
+      let mlw = $('#mainlogo').width();
       $('.gamesbar img').css({
         'height': cw + 'px'
       });
       $('.gamesbar').css({
         'height': (cw + 50) + 'px'
       });
+      $('#mainlogo').css({
+        'height': (mlw - 30) + 'px'
+      });
     };
 
     window.onresize = function() {
-      const cw = $('.gamesbar img').width();
+      let cw = $('.gamesbar img').width();
+      let mlw = $('#mainlogo').width();
       $('.gamesbar img').css({
         'height': (cw) + 'px'
       });
       $('.gamesbar').css({
         'height': (cw + 50) + 'px'
+      });
+      $('#mainlogo').css({
+        'height': (mlw - 30) + 'px'
       });
     };
   </script>
@@ -65,6 +73,23 @@
     <div class="col-12" id="logodiv" class="animate">
       <img src="./assets/pics/logolarge.png" alt="Large HINTWIZ logo" id="mainlogo">
     </div>
+  </div>
+  <div class="typewritersection">
+    <div class="typewriter">
+      <h1 id="line1">Reviews And Hints</h1>
+    </div>
+  </div>
+  <div class="typewritersection">
+    <div class="typewriter">
+      <h1 id="line2">For Your Favourite</h1>
+    </div>
+  </div>
+  <div class="typewritersection">
+    <div class="typewriter">
+      <h1 id="line4">Games</h1>
+    </div>
+  </div>
+  <div class="row">
     <a href="eliteindex.html" class="col-6 col-md-4 col-xl-3 animate__animated animate__fadeIn animate__faster animate__delay-1s">
       <div id="elite" class="gamesbar">
         <img src="./assets/pics/Edangerous.png" alt="Elite Dangerous Logo">
@@ -86,6 +111,7 @@
         <h3>More Games To Come Soon</h3>
       </div>
     </a>
+  </div>
   </div>
   <div class="row">
     <div class="spacer col-12"></div>
