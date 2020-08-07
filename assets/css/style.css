@@ -16,7 +16,8 @@ src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
 
 
 html{
-  width: 100vw; min-width: 320px;
+  width: 100vw;
+  min-width: 320px;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -25,9 +26,10 @@ body{
   font-family:'Eurostile';
   font-weight:normal;
   height: 100%;
-  width: 100vw; min-width: 320px;
+  width: 100vw;
+  min-width: 320px;
   overflow-x: hidden;
-
+  background: rgba(254, 252, 169, 0.2);
 }
 
 #logodiv{
@@ -54,6 +56,13 @@ body{
   text-align: center;
   color: #999999;
   text-decoration: none;
+}
+
+.gamesbar:hover{
+  background-color: rgba(0,125,125,0.4);
+  opacity: 0.4;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 #moretocome{
