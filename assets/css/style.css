@@ -235,6 +235,11 @@ body{
   background: url("https://golf-ladder-aqualate.net/assets/eliteinside.jpg") no-repeat center;
   background-size: 75% 90%;
 }
+
+#finalthoughts{
+  color: red;
+}
+
 #links{
   width:100vw;
 }
