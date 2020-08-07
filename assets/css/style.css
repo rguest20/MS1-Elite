@@ -29,7 +29,6 @@ body{
   width: 100vw;
   min-width: 320px;
   overflow-x: hidden;
-  background: rgba(254, 252, 169, 0.2);
 }
 
 #logodiv{
@@ -113,6 +112,9 @@ body{
   font-weight: 700;
 }
 
+.modal-backdrop {
+  z-index: -1;
+}
 
 #backdrop-pic{
   padding-left:0;
@@ -125,6 +127,7 @@ body{
   position: fixed;
   z-index: -1;
   opacity: 0.45;
+    background: rgba(254, 252, 169, 0.2);
 }
 
 .embed-container {
