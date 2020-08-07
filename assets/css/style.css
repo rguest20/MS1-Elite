@@ -116,6 +116,10 @@ body{
   z-index: -1;
 }
 
+.modal-header, .modal-body{
+  color: rgb(0,0,0);
+}
+
 #backdrop-pic{
   padding-left:0;
   padding-right: 0;
@@ -127,7 +131,7 @@ body{
   position: fixed;
   z-index: -1;
   opacity: 0.45;
-    background: rgba(254, 252, 169, 0.2);
+  background: rgba(254, 252, 169, 0.2);
 }
 
 .embed-container {
