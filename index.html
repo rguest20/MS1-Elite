@@ -10,7 +10,29 @@
   <link href="jqueryui/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/uxl/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="jqueryui/external/jquery/jquery.js"></script>
   <script src="https://kit.fontawesome.com/5b493034fa.js" crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function() {
+      $("#mainlogo").mouseover(
+        function() {
+          let randomiser = Math.random()
+          if (randomiser <= 0.4) {
+            $('#mainlogo').css("animation", "rubberBand 1s");
+          } else if (randomiser <= 0.8) {
+            $('#mainlogo').css("animation", "pulse 1s");
+          } else {
+            $('#mainlogo').css("animation", "tada 1s");
+          }
+        });
+      $("#mainlogo").mouseout(function() {
+        $('#mainlogo').css("animation", "");
+      });
+    });
   </script>
 </head>
 
@@ -90,6 +112,6 @@
       </div>
     </div>
   </footer>
-</body>
+  < /body>
 
-</html>
+    < /html>
