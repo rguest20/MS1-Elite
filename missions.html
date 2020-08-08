@@ -3,6 +3,18 @@
 <!--header section-->
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173045056-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173045056-1');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=0.7" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,7 +24,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link href="jqueryui/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  <title>Elite:Dangerous Missions</title>
+  <title>Elite:Dangerous Walkthrough</title>
 </head>
 
 <body>
@@ -47,22 +59,25 @@
   <div class="spacer">
   </div>
   <!--This section will appear as 2 columns of info when large and 1 column on smaller devices-->
-  <section id="main">
-    <h1>Types of Missions</h1>
-    <p>In this section we will discuss the various types of missions available in Elite:Dangerous and whether you should do them.
+  <section id="Welcome to the Universe!!">
+    <h1>Walkthrough</h1>
+    <p>In this section we will discuss how to get started in the world of Elite Dangerous.
   </section>
-  <section id="missiontypes">
-    <div id="1+2" class="row">
-      <div id="courierinfo" class="col-12 col-md-6">
-        <h3>Courier Missions</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <section id="Walthrough">
+    <div class="row">
+      <div id="controls" class="col-12 col-md-6">
+        <h3>What does my ship do??</h3>
+        <p>Welcome to Elite Dangerous and your shiny new sidewinder. I can see you made it past the menus. You did pick to join the MMO universe, right? </p>
+        <p> BAD DECISION</p>
+        <p> People out here can and possibly will kill you and quick, so we'd better aquaint you with your ship. Look left.</p>
+        <p>Oh, right, this is a walkthrough so I'd better give you a picture. </p>
+        <p> See that nice shiny picture to the right of the screen.
+          This is the navigation menu and from here you can pick where you'd like to fly to. The ship does a lot of the hard work for you so pick somewhere nice looking, or follow a mission. Notice the tabs, I'll discuss those in a minute.
       </div>
-      <div id="transportinfo" class="col-12 col-md-6">
-        <h3>Cargo Transport</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div id="menupic1" class="col-12 col-md-6 img-zoom-container">
+        <img src="assets/pics/elitenavigation.jpg" alt="Navigation menu" id="navigationmenu">
       </div>
+    </div>
     </div>
   </section>
   <hr />
@@ -134,6 +149,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="jqueryui/external/jquery/jquery.js"></script>
   <script src="jqueryui/jquery-ui.js"></script>
+
 </body>
 
 </html>

@@ -369,11 +369,17 @@ body{
   color: #000;
 }
 
-#pic1, #pic2, #pic3{
+#pic1, #pic2, #pic3, #menupic1{
   margin-top: 10px;
   height: 300px;
 }
 
+
+#navresult, #navigationmenu{
+  width: 45%;
+  object-fit:cover;
+  display: inline-block;
+}
 #pic1img, #pic2img, #pic3img {
   height: 100%;
   width:100%;
