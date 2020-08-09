@@ -33,9 +33,10 @@
     <img src="./assets/pics/shipinflight.png" alt="Ship in flight" class="col-12" id="backdrop-pic">
   </div>
   <!--navbar-->
+  <!--navbar-->
   <div class="row">
     <nav class="navbar navbar-transparent navbar-expand-xl navbar-light col-12">
-      <a class="navbar-brand" href="index.html"><img src="./assets/pics/elitelogo.png" id="logo" alt="HINTWIZ logo"></a><span id="subtitle"> ELITE: DANGEROUS</span>
+      <a class="navbar-brand" href="index.html"><img src="./assets/pics/elitelogo.png" id="logo" alt="Hintwiz logo"></a><span id="subtitle"> ELITE: DANGEROUS</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,13 +44,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="eliteindex.html">Home</a>
+            <a class="nav-link" href="eliteindex.html">Review </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="missions.html">Mission Types</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="ships.html">Initial Ships</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Walkthrough
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="shipinside.html">Inside your ship</a>
+              <a class="dropdown-item active" href="ships.html">Early Ships</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Submit a Correction</a>
+            </div>
           </li>
         </ul>
       </div>
