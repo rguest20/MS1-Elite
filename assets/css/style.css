@@ -32,7 +32,7 @@ body{
 }
 
 #logodiv{
-  height: 400px;
+  max-height: 300px;
   animation: rubberBand;
   animation-duration: 1s;
 }
@@ -42,8 +42,8 @@ body{
   display: block;
   margin: 0 auto;
   width: 40%;
-  min-width: 320px;
-  max-width: 450px;
+  min-width: 100px;
+  max-width: 300px;
 }
 
 #logodiv img:hover{
@@ -106,12 +106,12 @@ body{
   margin-top: 20px;
   border: 1px solid #000000;
   text-align: center;
-  color: #999999;
+  color: #222222;
   text-decoration: none;
 }
 
 .gamesbar:hover{
-  background-color: rgba(0,125,125,0.4);
+  background-color: rgba(0,0,0,0.4);
   opacity: 0.4;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
@@ -184,7 +184,7 @@ body{
   position: fixed;
   z-index: -1;
   opacity: 0.45;
-  background: rgba(254, 252, 169, 0.2);
+  background: rgba(50,50, 50, 0.1);
 }
 
 .embed-container {
