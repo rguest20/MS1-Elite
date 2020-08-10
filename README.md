@@ -33,8 +33,18 @@
 - As a user, I want clear links that take me to where I need to go so I can navigate more easily- designed for
 - As a user, I may want to add the developer to my social media so I can ask further questions - designed for
 
-**Entity relationship**
+## Entity relationship
+In order for my site to link fully to itself, I intend to put the links into the top nav bar to the right hand side.  This will be consistent across all of the pages to keep the user interface simple. I will also include links at the bottom of the page, which are somewhat prettified.
 
+UPDATE: Due to confusion, links at the bottom of the page have been removed.  There will only be links on the top bar now
+
+UPDATE: With the addition of the title page, I have made it so the logo at the top right now navigates to this page.  This is in keeping with standard user design and is obvious to follow.
+
+UPDATE: Based on test feedback, I have decided to have a dropdown menu from the walkthrough link and put all walkthrough based pages inside that. This will be in keeping with my title page.
+
+## Preliminary Designs
+
+These can be found [here](ms1wireframes.pdf)
 ---
 
 # Post-Development
