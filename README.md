@@ -39,7 +39,7 @@
 
 # Post-Development
 
-To access the page go to your favourite browser and type "<http://playground.golf-ladder-aqualate.net/>" into the search bar. The code is hosted at "<https://github.com/rguest20/MS1-Elite>".
+To access the page go to your favourite browser and type "<http://r-guest-developer.world>" into the search bar. The code is hosted at "<https://github.com/rguest20/MS1-Elite>".
 
 ### Dependencies
 #### JavaScript
