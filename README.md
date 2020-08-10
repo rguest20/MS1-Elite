@@ -84,7 +84,7 @@ Again, several CSS dependencies are used but are included with the site, so do n
 CSS for the pages is included in a separate stylesheet, but this is again hosted and built bespoke to extend the dependencies.
 
 ## How to use
-### UPDATE: Landing Page page
+### UPDATE: Landing Page
 On arrival to the page you will be presented with the following:
 
 ![Screenshot of home page](assets/pics/Screenshot1.jpg?raw=true "Landing Page")
@@ -92,8 +92,27 @@ On arrival to the page you will be presented with the following:
 Upon clicking on the highlighted area, this will take you to the main page for Elite:Dangerous.  The other similar boxes do nothing as there are no other reviewed games ready to be uploaded.  They do however represent how I would continue the site if time permitted.
 
 ### Elite Dangerous Home page
-This page includes a large amount of information about the game including the trailer, a review and some hints on how to start the game.
+This page includes a large amount of information about the game including the trailer, a review ~~and some hints on how to start the game~~ and a link to the steam page where the game can be bought:
+First Screenshot
+![Screenshot of review page](assets/pics/Screenshot2.jpg?raw=true "Review Page")
+Yellow: Returns to landing page
+Green: Dropdown menu
+Red: External links to Facebook and Twitter (opens in new pages)
+Blue: Modal that shows relevant legal information and allows users to send me an email if they believe I have used something that breaches copyright law.
 
+Second Screenshot
+![Bottom Screenshot of review page](assets/pics/Screenshot3.jpg?raw=true "Review Page Bottom")
+Red: Links to walkthrough pages about Elite.
+Green: External Links to buy the game or watch the trailer
+
+note: all external links open in separate window.
+
+### Walkthrough information pages
+
+### Ships Page
+
+### Correct Website form
+ 
 ## UX design
 To make the design more user friendly I have done the following:
 
