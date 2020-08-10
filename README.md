@@ -43,7 +43,14 @@ UPDATE: With the addition of the title page, I have made it so the logo at the t
 UPDATE: Based on test feedback, I have decided to have a dropdown menu from the walkthrough link and put all walkthrough based pages inside that. This will be in keeping with my title page.
 
 ## Preliminary Designs
-These can be found [here](ms1wireframes.pdf)
+These can be found [here](ms1wireframes.pdf).
+
+UPDATE: Major Change; Title page added to create a landing page for users to come into.
+
+UPDATE: Minor Change; Extra pages added to create a more comprehensive walkthrough
+
+UPDATE: Major Change; PHP page added to create some feedback when a user submits a form.
+
 ---
 
 # Post-Development
@@ -51,6 +58,12 @@ These can be found [here](ms1wireframes.pdf)
 To access the page go to your favourite browser and type "<http://r-guest-developer.world>" into the search bar. The code is hosted at "<https://github.com/rguest20/MS1-Elite>".
 
 ### Dependencies
+#### HTML
+I am using HTML 5 and this is shown by the use of the '<!DOCTYPE html>' tag used at the start of each document.  This comes with all of the semantic markup that I need to ensure that the code is easy to read and debug if necessary.
+
+#### PHP
+PHP is naturally supported by the webhost that I am using and acts a server side language to deal with the form that is inputted.  I am using PHP Mailer to send an email so that the form is not pointless.
+
 #### JavaScript
 There are several JavaScript libraries that are required to ensure the page works, but these are included in the hosted site, so no dependencies are needed for viewing the site. For the sake of clarity, these are the JavaScript libraries that are used:
 - JQuery
@@ -59,20 +72,24 @@ There are several JavaScript libraries that are required to ensure the page work
 - Popper.js
 
 There is also some JavaScript included on the pages, but this is bespoke using the dependencies.
+
 #### CSS
 Again, several CSS dependencies are used but are included with the site, so do not need anything installing to use. Again, for the sake of clarity these dependencies are listed below:
 - Bootstrap 4
 - Font-Awesome 5
 - Google Fonts
 - JQueryUI
+- Animate.css
 
 CSS for the pages is included in a separate stylesheet, but this is again hosted and built bespoke to extend the dependencies.
 
 ## How to use
-### Home page
+### UPDATE: Landing Page page
 On arrival to the page you will be presented with the following:
 
-Upon clicking on the highlighted area, this will take you to the main page for Elite:Dangerous.
+![Screenshot of home page](assets/pics/screenshot1.png?raw=true "Landing Page")
+
+Upon clicking on the highlighted area, this will take you to the main page for Elite:Dangerous.  The other similar boxes do nothing as there are no other reviewed games ready to be uploaded.  They do however represent how I would continue the site if time permitted.
 
 ### Elite Dangerous Home page
 This page includes a large amount of information about the game including the trailer, a review and some hints on how to start the game.
@@ -81,4 +98,4 @@ This page includes a large amount of information about the game including the tr
 To make the design more user friendly I have done the following:
 
 ## Known issues
-New front page requires styling and a footer
+~~New front page requires styling and a footer~~
