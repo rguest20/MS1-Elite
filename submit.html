@@ -74,7 +74,7 @@
       <div id="formsection" class="jumbotron offset-1 col-10">
         <h1>Wait! That's Wrong!</h1>
         <p>Here at HINTWIZ we occasionally make mistakes and we would love to hear about them from you. If your correction is added, you will also find your name added to our wall of fame!</p>
-        <form>
+        <form method="post" action="mail.php">
           <div class="form-group">
             <label for="yourname">What is your name?</label>
             <input type="text" class="form-control" id="yourname" name="yourname" placeholder="Your name">
@@ -93,7 +93,7 @@
           </select>
           <div class="form-group">
             <label for="whatwedid">What did we get wrong? Please give as much information as possible.</label>
-            <textarea class="form-control" id="whatwedid" rows="3"></textarea>
+            <textarea class="form-control" id="whatwedid" name="whatwedid" rows="3"></textarea>
           </div>
           <input type="submit" value="Tell Us Off!!">
         </form>
