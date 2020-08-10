@@ -87,7 +87,7 @@ CSS for the pages is included in a separate stylesheet, but this is again hosted
 ### UPDATE: Landing Page page
 On arrival to the page you will be presented with the following:
 
-![Screenshot of home page](assets/pics/screenshot1.png?raw=true "Landing Page")
+![Screenshot of home page](assets/pics/Screenshot1.jpg?raw=true "Landing Page")
 
 Upon clicking on the highlighted area, this will take you to the main page for Elite:Dangerous.  The other similar boxes do nothing as there are no other reviewed games ready to be uploaded.  They do however represent how I would continue the site if time permitted.
 
