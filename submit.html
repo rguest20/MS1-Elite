@@ -66,27 +66,45 @@
   <!--spacer to ensure that content appears below navbar-->
   <div class="spacer">
   </div>
-  <!--This section will appear as 2 columns of info when large and 1 column on smaller devices-->
-  <section id="walkthroughintro">
-    <div class="row">
-      <div class="col-12">
-        <h1>Walkthrough</h1>
-        <p>In this section we will cover the basics of combat and how to survive in the Elite universe if attacked.</p>
-      </div>
-    </div>
+  <section id="horizontalrule">
     <hr>
   </section>
-  <section id="lefthandmenu">
+  <section id="formsectionjumbo">
     <div class="row">
-      <div id="navmenu" class="col-12">
-        <div id="menupic1" class="float-md-right">
-          <img src="assets/pics/elitecombat.png" alt="Ships Fighting Outside Space Station" id="navigationmenu">
-          <p><small>Space Combat</small></p>
-        </div>
-        <h3>Combat</h3>
-        <p></p>
+      <div id="formsection" class="jumbotron offset-1 col-10">
+        <h1>Wait! That's Wrong!</h1>
+        <p>Here at HINTWIZ we occasionally make mistakes and we would love to hear about them from you. If your correction is added, you will also find your name added to our wall of fame!</p>
+        <form>
+          <div class="form-group">
+            <label for="yourname">What is your name?</label>
+            <input type="text" class="form-control" id="yourname" name="yourname" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">What is your email address?</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+          </div>
+          <label for="whichpage">Which page did we mess up?</label>
+          <select class="form-control" name="whichpage" id="whichpage">
+            <option value="null">Please pick a page...</option>
+            <option value="insideship">Inside your ship</option>
+            <option value="combat">Combat</option>
+            <option value="mining">Mining</option>
+            <option value="ships">Early Ships</option>
+          </select>
+          <div class="form-group">
+            <label for="whatwedid">What did we get wrong? Please give as much information as possible.</label>
+            <textarea class="form-control" id="whatwedid" rows="3"></textarea>
+          </div>
+          <input type="submit" value="Tell Us Off!!">
+        </form>
       </div>
     </div>
+  </section>
+  <section id="walloffame">
+    <h3>Wall Of Fame/Contributors</h3>
+    <ul>
+      <li>R Guest</li>
+    </ul>
   </section>
   <div class="row" id="lowerspacer">
     <div class="spacer col-12"></div>
