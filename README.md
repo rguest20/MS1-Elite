@@ -4,7 +4,7 @@
 
 ## Functional specifications - Given by Code Institute
 - LO1: Design a front end web application based on the principles of user experience design, accessibility and responsivity.
-- LO2: Develop and implement a static front end web application using HTML and css
+- LO2: Develop and implement a static front end web application using HTML and CSS
 - LO3: Maximize future maintainability through documentation, code structure and organisation
 - LO4: Use version control to maintain, upload and share code with developers
 - LO5: Test and deploy a front end application to a cloud platform
@@ -95,26 +95,58 @@ Upon clicking on the highlighted area, this will take you to the main page for E
 This page includes a large amount of information about the game including the trailer, a review ~~and some hints on how to start the game~~ and a link to the steam page where the game can be bought:
 First Screenshot
 ![Screenshot of review page](assets/pics/Screenshot2.jpg?raw=true "Review Page")
-Yellow: Returns to landing page
-Green: Dropdown menu
-Red: External links to Facebook and Twitter (opens in new pages)
-Blue: Modal that shows relevant legal information and allows users to send me an email if they believe I have used something that breaches copyright law.
+- Yellow: Returns to landing page
+- Green: Dropdown menu
+- Red: External links to Facebook and Twitter (opens in new pages) suggested by user stories
+- Blue: Modal that shows relevant legal information and allows users to send me an email if they believe I have used something that breaches copyright law.
 
 Second Screenshot
 ![Bottom Screenshot of review page](assets/pics/Screenshot3.jpg?raw=true "Review Page Bottom")
-Red: Links to walkthrough pages about Elite.
-Green: External Links to buy the game or watch the trailer
+- Red: Links to walkthrough pages about Elite.
+- Green: External Links to buy the game or watch the trailer as suggested by user story
 
 note: all external links open in separate window.
 
 ### Walkthrough information pages
+These pages include the text information to help a person early on in their Elite career. Several pages are given that all show how to progress.  A standard design for this was used where the information was on the left and pictures are given on the right.  A horizontal rule is used to differentiate separate pieces of information.
+
+![Screenshot of walkthrough pages](assets/pics/Screenshot4.jpg?raw=true "Walkthrough Pages")
+- Red: Returns to landing page
+- Green: Dropdown menu
+- Yellow: External links to Facebook and Twitter (opens in new pages) suggested by user stories
+- Blue: Modal that shows relevant legal information and allows users to send me an email if they believe I have used something that breaches copyright law.
 
 ### Ships Page
+The ships page is a little different from the other pages. This has 3 different pictures of early ships where clicking on them will give you more information. To keep UX good, I have made sure that on any size screen, the information will always appear below the ship picture.
+This was achieved with JavaScript.
+
+![Screenshot of ships page](assets/pics/Screenshot5.jpg?raw=true "Ships page unclicked")
+- Red: Clicking here will give you information about the Ships
+
+![Screenshot of ships page with one picture clicked](assets/pics/Screenshot6.jpg?raw=true "Ships page clicked")
+This is what happens when the page is clicked
 
 ### Correct Website form
- 
+The correct my website form allows users to submit requests for information to be corrected on certain pages.  When complete and submitted this will send an email to my website domain email as well as the user.  Validation is used on the client side to ensure that information is passed into the form before it is submitted. At the bottom, as a reward for keen eyed users, there is a wall of fame for people who helped update the site to be more correct.
+
+![Screenshot of form page](assets/pics/Screenshot7.jpg?raw=true "Form page to inform website owner of mistakes")
+- Red: This is where the name of the user is to be entered. A placeholder and label makes this clear. Validation used to ensure it is not empty
+- Orange: This is where the email of the user is to be entered. A placeholder and label makes this clear.  Validation used to make sure it looks like an email address.
+- Green: User picks a page that needs correcting. Validation used to make sure a page is picked.
+- Blue: User explains what the issue with the page is. Validation used to make sure it is not left blank.
+-Purple: Submit button. Sends the completed form to a PHP page to be emailed to user/owner.
+
 ## UX design
 To make the design more user friendly I have done the following:
+- I have used a stark colour palette in order to keep the website visually appealing
+- My navbar follows the expectations set up in my splash pages
+- Information is split into separate pages in order to not overwhelm the user
+- Any clickable link will react in some way to make it obvious that it is clickable. The speed of these reactions is kept quick so the feedback to the user is obvious.
+- Feedback is accepted via a form which will then send the user and the site owner an email.  This means that the user knows that their request has been seen and may be acted on.
+- The feedback submit page will auto redirect to the main page for the game, meaning the user does not feel lost.  A manual redirect is also provided in the event that the automatic redirect fails.
+- All pictures have alt text to allow screen readers to explain what the picture is about.  I have tried to work with assistive technology.
+- The site is responsive and will resize to different screens.  This means it can be viewed on any device (tested with dev tools)
 
 ## Known issues
-~~New front page requires styling and a footer~~
+- ~~New front page requires styling and a footer~~
+- To extend this page I would add extra games and extend the walkthrough even further to cover more topics within the games.
