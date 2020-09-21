@@ -3,14 +3,14 @@
   $email = $_POST["email"];
   $whichpage = $_POST["whichpage"];
   $whatwrong = $_POST["whatwedid"];
-    ini_set( 'display_errors', 1 );
-    error_reporting( E_ALL );
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
     $from = "info@r-guest-developer.world";
     $to = $email . ", info@r-guest-developer.world";
     $subject = "HINTWIZ request for update recieved";
     $message = "Dear " . $name . ", \r\n Thank you for your message. We have received the following information from you and will review your update request soon.\r\n Page request for: " . $whichpage . "\r\n Request as follows:" . $whatwrong . "\r\n \r\n \r\n HINTWIZ";
     $headers = "From:" . $from;
-    mail($to,$subject,$message, $headers);
+    mail($to, $subject, $message, $headers);
 ?>
 
 <!DOCTYPE html>
@@ -116,7 +116,7 @@
             <h5>Disclaimer</h5>
             <p>This site was created for educational purposes and I claim no ownership over any of the images used within. These images are used in accordance with the Fair Use laws in the US (used for review/critique) and Fair Dealing laws in the
               UK
-              (used for educational purposes). In the event of any copyright claim, please email <a href="mailto:copyright@r-guest-developer.world?subject=Copyright Take Down Request">HERE</a>
+              (used for educational purposes). In the event of any copyright claim, please email <a href="mailto:copyright@r-guest-developer.world">HERE</a>
             <h5>Credit for images to:</h5>
             <p>Elite:Dangerous - Frontier Developments PLC</p>
             <p>https://www.retrogamer.net/retro_games80/</p>
