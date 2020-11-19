@@ -18,18 +18,6 @@
 <!--header section-->
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173045056-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-173045056-1');
-  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=0.7" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -45,12 +33,12 @@
 <body>
   <!--background image-->
   <div id="backdrop" class="row">
-    <img src="./assets/pics/shipinflight.png" alt="Ship in flight" class="col-12" id="backdrop-pic">
+    <img src="assets/pics/shipinflight.png" alt="Ship in flight" class="col-12" id="backdrop-pic">
   </div>
   <!--navbar-->
   <div class="row">
     <nav class="navbar navbar-transparent navbar-expand-xl navbar-light col-12">
-      <a class="navbar-brand" href="index.html"><img src="./assets/pics/elitelogo.png" id="logo" alt="Hintwiz logo"></a><span id="subtitle"> ELITE: DANGEROUS</span>
+      <a class="navbar-brand" href="index.html"><img src="assets/pics/elitelogo.png" id="logo" alt="Hintwiz logo"></a><span id="subtitle"> ELITE: DANGEROUS</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
