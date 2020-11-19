@@ -22,6 +22,9 @@
 - Ensure this is fully documented and commented to be clear to any developer reading through.
 
 ## User stories
+
+### First Time Users
+
 - As a user who has never played the game, I may want to see a trailer so that I can decide on my level of interest in the game
 - As a user who has never played the game, I would like a review to know what the developer's thoughts on the game are so I can judge whether or not I want to play it.
 - As a user, I want to know how to start in a new game of Elite quickly so I do not have to work out the controls for myself
@@ -29,9 +32,45 @@
 - As a user, I want to know how different ships perform different jobs so I can spend my in game currency more effectively
 - As a user, I want to see something eye-catching and professional so my interest is maintained- designed for
 - As a user, I don't like cluttered pages with too much information otherwise I may lose the will to continue reading - designed for
-- As a user, I want everything that I can interact with to be obvious so I do not waste time looking for things - designed for
+
+### Hitting these targets
+
+- As a user who has never played the game, I may want to see a trailer so that I can decide on my level of interest in the game
+    * The trailer for the game is available at the bottom of the page. This will open the YouTube player in a separate window so that people can see this without losing their place on the website
+
+- As a user who has never played the game, I would like a review to know what the developer's thoughts on the game are so I can judge whether or not I want to play it.
+    * The first page that users visit is the review page.  
+    * This has a summary at the end that helps players quickly see what my opinions of the game would be
+    
+- As a user, I want to know how to start in a new game of Elite quickly so I do not have to work out the controls for myself
+    * One of the first links available to the users is the "walkthrough" link.  This allows players to quickly and easily navigate to the section that would be most helpful.
+    
+- As a user, I want to know which jobs I take early on in Elite, with advantages and disadvantages of each so I can get going faster
+    * One of the first links available to the users is the "walkthrough" link.  This allows players to quickly and easily navigate to the section that would be most helpful.
+    
+- As a user, I want to know how different ships perform different jobs so I can spend my in game currency more effectively
+    * One of the first links available to the users is the "walkthrough" link.  This allows players to quickly and easily navigate to the section that would be most helpful.
+    
+- As a user, I want to see something eye-catching and professional so my interest is maintained
+    * The splash page for the site is particularly eye catching with some nice JavaScript to draw the user in.
+    
+- As a user, I don't like cluttered pages with too much information otherwise I may lose the will to continue reading 
+    * Care was taken to limit the amount of information on each page and add extra pages where necessary.  This was continuously tested with beta users.
+
+### Returning User
+- As a user, I want everything that I can interact with to be obvious so I do not waste time looking for things 
 - As a user, I want clear links that take me to where I need to go so I can navigate more easily- designed for
-- As a user, I may want to add the developer to my social media so I can ask further questions - designed for
+- As a user, I may want to add the developer to my social media so I can ask further questions
+
+### Hitting these targets
+- As a user, I want everything that I can interact with to be obvious so I do not waste time looking for things 
+    * One of the first links available to the users is the "walkthrough" link.  This allows players to quickly and easily navigate to the section that would be most helpful.
+    
+- As a user, I want clear links that take me to where I need to go so I can navigate more easily- designed for
+    * One of the first links available to the users is the "walkthrough" link.  This allows players to quickly and easily navigate to the section that would be most helpful.
+
+- As a user, I may want to add the developer to my social media so I can ask further questions
+    * Social media links are available in the footer of each page, allowing the user to navigate to an external page that they can add the developer on.
 
 ## Entity relationship
 In order for my site to link fully to itself, I intend to put the links into the top nav bar to the right hand side.  This will be consistent across all of the pages to keep the user interface simple. I will also include links at the bottom of the page, which are somewhat prettified.
@@ -52,6 +91,15 @@ UPDATE: Minor Change; Extra pages added to create a more comprehensive walkthrou
 UPDATE: Major Change; PHP page added to create some feedback when a user submits a form.
 
 ---
+
+## Features
+
+-   Responsive on all device sizes
+
+-   Interactive elements
+
+-   JavaScript and PHP integration
+
 
 # Post-Development
 
@@ -147,6 +195,13 @@ To make the design more user friendly I have done the following:
 - All pictures have alt text to allow screen readers to explain what the picture is about.  I have tried to work with assistive technology.
 - The site is responsive and will resize to different screens.  This means it can be viewed on any device (tested with dev tools)
 
+## Further Testing
+
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
 ## Deployment
 
 ### GitHub Pages
@@ -179,7 +234,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/rguest20/ms1-elite
 ```
 
 7. Press Enter. Your local clone will be created.
@@ -193,13 +248,9 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Unpacking objects: 100% (10/10), done.
 ```
 
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
-
 ## Credits
 
 ### Code
-
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
@@ -207,21 +258,19 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
--   All content was written by the developer.
-
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+-   All content was written by the developer, except for a short excerpt of code written by Stack Overflow User: Knightkiddo.  This code allowed the creation of the text on the front page.
 
 ### Media
 
--   All Images were created by the developer.
+-   All Images were used under fair use clauses for the purpose of Review.  The artwork is the property of Frontier and their subsiduaries.
 
 ### Acknowledgements
 
 -   My Mentor for continuous helpful feedback.
 
--   Tutor support at Code Institute for their support.
+-   Tutor support at Code Institute for their support. The tutor team also supported in the creation of this README.
 
 ## Known issues
 - ~~New front page requires styling and a footer~~
 - To extend this page I would add extra games and extend the walkthrough even further to cover more topics within the games.
-- Email PHP does not function on the GitHub Sample Page.  To see a functional version, please visit [HERE](http:/r-guest-developer.world/ms1)
+- Email PHP does not function on the GitHub Sample Page.  To see a functional version, please visit [HERE](http://r-guest-developer.world/ms1/submit.html)
