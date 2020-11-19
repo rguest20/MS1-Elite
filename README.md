@@ -254,7 +254,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
-- [PHP Mailer](https://github.com/PHPMailer/PHPMailer) - Built in to Hostinger Web Hosting Services.  Used to allow contact between users and the developer.
+- [PHP Mailer](https://github.com/PHPMailer/PHPMailer): Built in to Hostinger Web Hosting Services.  Used to allow contact between users and the developer.
 
 ### Content
 
