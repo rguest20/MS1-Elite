@@ -195,6 +195,27 @@ To make the design more user friendly I have done the following:
 - All pictures have alt text to allow screen readers to explain what the picture is about.  I have tried to work with assistive technology.
 - The site is responsive and will resize to different screens.  This means it can be viewed on any device (tested with dev tools)
 
+# Testing
+## W3C Validator
+- combat.html
+![Test picture showing no issues](assets/pics/Test1.png?raw=true "Test picture")
+- eliteindex.html
+![Test picture showing no issues](assets/pics/Test2.png?raw=true "Test picture")
+- index.html
+![Test picture showing no issues](assets/pics/Test3.png?raw=true "Test picture")
+- mail.php(HTML only)
+![Test picture showing no issues](assets/pics/Test4.png?raw=true "Test picture")
+- mining.html
+![Test picture showing no issues](assets/pics/Test5.png?raw=true "Test picture")
+- shipinside.html
+![Test picture showing no issues](assets/pics/Test6.png?raw=true "Test picture")
+- ships.html
+![Test picture showing no issues](assets/pics/Test7.png?raw=true "Test picture")
+- submit.html
+![Test picture showing no issues](assets/pics/Test8.png?raw=true "Test picture")
+- style.css
+![Test picture showing no issues](assets/pics/Test9.png?raw=true "Test picture")
+
 ## Further Testing
 
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
